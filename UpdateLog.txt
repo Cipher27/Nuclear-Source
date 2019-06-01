@@ -1,0 +1,905 @@
+#Thatscape update log, started all over again some pc probs.. corrupted cache etc and forsgot backups
+
+6/3/2016
+-Converted item defs, and npc defs. goign to do object defs tomorow.
+-Added seedicider.
+-presets almost done, need to add my old interface again.
+-Random create spawns into the wilderness
+29/3
+-Loading gfx done.
+-Added springcleaner, converts amrour into bars and smithing exp
+-Started on the home.
+-Added a ingame panel (at the achievement tab).
+-Power tokens dorp from monsters, higher combat lvl = more tokens
+-fixed the bug where you didn't need a slayer level to kill certain monsters,
+-added right click examine player option, you can see their levels and armour.
+-Mix potions + effect added.
+-amulet of souls now give more healing while soulsplitting
+-players can now change their house style
+-note paper now works
+-made power tokens stackable
+-added max, the skiller at home
+1/4
+-Record redone + interface added.
+-started on portable well + range+ ...
+-added a portal to home to close a room which is meant for prestiged guys only.
+-corrupted ore is now smithable.
+-holy,searing,salve overloads are now drinkable. + birghtfire potion
+3/4
+-Corrupted ore smelting bux fixed.
+-obsidian shards are now smeltable.
+-option to enable special drops at kuradel, and you can get scales to make armour. Only from monsters you have a task from.
+-random server messages added
+-trivia redone
+10/4
+-Celestial dragons are now attackable
+-Pvm master quest and boss caves done
+-wildywyrm are now a slayertask + celestials
+-wildywyrm now drops the amulet of souls
+-You can now make spiked dragon armour, and fur orn kits and orn dragon.
+-Started on the pirate quest
+-Added 120master cape shop, with interface
+-Players can now change their lootbeam gfx supports default and rainbow atm
+11/4
+-Tried to make 120cape overrides, but it's seems that they are more than one model
+-KeepsakeKeys now work
+-made a class vor mastercape abilitys. agility, prayer,hp,con,rc,slayer done
+-Soldiers at home can't be attacked.
+- some more progress on the pirate quest
+- you can't add mastercapes to the keepsakeboxes.
+12/4
+- If you drop a valueable item you get a message to confirm that you want to drop it.
+-crystal pickaxe and hatchet are now useable
+-spawned masteer capes interface + sum obelisk at home and holiday portal
+-wc,fish,smith,mine,cook mastercapes nowe have ability's, just some basic stuff having not much inspiration
+-Fixed a bug where the record would overwrite the players name and amount by null/0.
+-Finished the quest complete interface for the lost pirates, rocktailsoup recipe 
+14/4
+-added automaton combat
+-added spawns for them aswel + added some small dialogues in the cave.
+17/4
+-added wealthcal interface
+-added construction interface
+-added preset interface
+-added potion interface
+-Fixed mastercapes interface
+18/4
+-arcane resting and zen resting added
+-updated sol rewards, cause wtf fucking copper ore,fishing bait and cabbages??
+-Added dummy's
+20/4
+-dummy's don't respawn back anymore 
+-made a custom dung boss, world groger. has some special attacks like taking your soul and you need to reclaim it it heal back etc..
+-another custom boss, which spawns skelettons
+-added double exp tokens which stay after server logs or when the players logs off
+21/4
+-started on jadinko's lair.
+-vine chopping done
+-item crafting done.
+-Redone fletching
+24/4
+-afk timer, which logs out players after 5min without moving their mouse. to prevent accounts from getting stuck after crash
+-Worked on a new custom boss  prehestorical abyssal
+-dominion crossbow now useable
+30/4
+-you now can create spider legs and all the noxious weapons
+-started on sirenic crafting
+-gave the prehistoric abysal drops
+-money bags now give money.
+-updated the prehistorical abyssal, new npc and new place. drops spawns somewhere else
+-added keybinds,players can now close interfaces with the "esc" button, delete button will remove your whole inventory and the home button will teleport you to the home.
+-players can nowe enable and disable key binds
+1/5
+-potion timers now work for prayer renewalls,anitfire,anitpotions and overload
+2/5
+-Item degrading, players can now see the percentage of their item. noxious weapons now degrade also +chaotic
+3/5
+-Added some new attacks to the custom boss
+-sirenic crafting
+-ancient ashes can now be burried, powertokens are stackable.
+6/5
+- finished the pets interface, every bosspets is now summable. Players can get these pets by killing bosses every 100 kills 1% increase.
+-Strarted on legendary pets: alchemy and banking and geetting drops from death npc's
+-new pets added, frosty,fluffie,prototype,mini blink.
+11/5
+-updated legendary pets, now have levels and can level up. new feature added
+-fixed some herblore bugs, only overload bug need to get fixed.
+-added record interface
+-ovl bug fixed
+-Airut bones can now be burried
+-Glass blowing added 99%
+- Armadyl orb creation
+- when you click an dragonbane kit, you now get a dialogue with the item you can use it on.
+-player can now split vine whip.
+-godswords dismantle are done
+-players now leave their house when they log off, caused memory probs
+12/5 today will be all construction ;)
+-Added more windows and walls for the house. Now every style should have windows.
+-Throne room is now supported.
+-Formal garden is now supported
+-Dungeons + dungeon traps are now supported, summoning room is now supported + costume room
+-Fixed the 3th roof, someone put the wring id in it 235 should be 236
+-you now need a watercan to plant plants in your garden
+-players can now pick to where their portals go.
+-shelves now have a dialogue
+-players can now sit on thrones
+18/5
+- started on a slave program, players can send a slave every hour to a resource gathering and get the loot after one hour. supporrts fishing, woodcutting and mining. Slayer will be done later
+19/5
+-GE shortcut added
+-kuradel dungeon shortcuts
+-bane ore is now mineable
+- players can now send their slaves to kill monsters. can choose between 3 monsters
+-players can now upgrade the tools from their slave and armour
+-slave food use
+21/5
+-did the trails on the slaves
+-wildy manager now has the right chat id, + added revenants shop to make revanants more profitable
+-brawling gloves effect added
+-wildy lava sharks added, can be fished +  damage when you are not wearing ice gloves
+- ice warriors,giant bat, death wing, some zombies, greater demon, black demon, added all kalphite creatures with animations + kq,daganoths+ dag mother.  now have attack and death animation
+23/5
+-when you enter the godwars dungeon it now does the right animation and starts the controler
+-godwars npc now attack you when you are not wearing the right items suchs as bandos zamorak etc
+-players now lose their kc when they leave
+-all dungeoneering prayer amulets now work.
+-revenants will now drop brawling gloves
+-forin brace now works for revenants
+25/5
+-reworked my instances a bit
+- added ironman + trophee sprite for record holders
+-Started on the prestige guild
+-ring of wealth gives increased drop rates
+-donators have extra drop rate
+-everytime you prestige your droprate increase with 0.1
+28/5
+-players can now sell their artifacs
+-players can now make flask glass
+-flask crafting added
+-started on a email confirmation/
+3/6
+-did some more on the email stuff, now generates a random code from letters and numbers, code check. Custom email can be send
+-started on a present thing, where online players get presents every random hour or two (idea from a rust server)
+-comp and max cape teleports
+-you can now remove your item in the bonus interface. Small bug with the bank interface going to fix that soon
+6/6
+-bows can now shoot p arrows, noxious bow works now
+7/6
+guthan effect added.
+blood furry now heals you. todo bloodneck blood charges
+spears do more damage against corp
+hybrid minigame set effect added.
+-slayer helm effect added
+8/6
+-fixed the bug where player couldn't attack an npc if they did not stand face to face. was wrong handled in the playercombat, still some small bugs thou.
+-added gfx to the blood furry heal 
+10/6
+-gave all master capes stats + ascensions
+-bug fixed where items from hunter did not appear in your inventory.
+-grenwalls now give herbs
+11/6
+-when leveling up hunter it now displays the hunter icon instead of the dungeoneering icon.
+-boosted rate of cathing hunter npcs
+17/6
+-hunter added to bot.
+-blood necks now use charges
+-spawned elder tree in wilderness, can now be cut.
+-added blood tree and drame tree to woodcutting
+-dragon crossbow can now be made
+-ascendri,bakramil & bloodwood bolts + slayer bolts and arrows fletchable
+-crystal tree spawned in the wilderness and can be cut
+-added karils pistols + ahrims wand to barrows loot
+21/6
+-players now now spawn summoning familiars, bug todo familiars don't go away after dismissing
+-bug almost fixed, had something to do with the animation i guess
+-teleports to crystal tree and elder tree added.
+- the wilderness controler now starts when you tp to the wildernes
+-fixed the gate in the wilderness
+24/6
+-fxied necrolord combat
+-when you open your armour tab you can now check the charges of your items
+-charms are now dropped different, removed useless charms like talon etc. now more rarely and not every kill.
+-charming imp done, players can select which charm they want and whihc not
+-ring of wealth special drops done
+-chamring imp,bonecrusher, gold collecter can't be equiped. they were send to a wrong armour space (rs3 interface which we don't have)
+-Gave all noxious bows combat stats
+26/6
+-added skilling teleport interface
+-killing the necrolord now removes the skelletons
+-thok now can create a celestial staff for you, you need the 4 necrolord staffs.
+-skelletons of the necrolord won't respawn anymore
+-made barrows more profitable
+28/6
+-elder logs can now be fletched, you can also make note paper from it.
+a-elder trees now are harder to chop
+-elder bow added to the combat list
+29/6
+-added boss teleport interface, has some bugs (need to redo it, background should be x = 10 not 0..)
+-silverhawk boots effect added
+-changed master command, no longer gives you max exp, just enough for 99
+-server now logs which item option you click on
+started on kiln damage dealt for the kiln capes
+3/7
+-added an aray in player.java for the seedicider to declare which seeds you want and which not.
+-started on a poll system, todo name check
+4/7
+-based poll system done
+-added print screen tool
+-can't wear the seedicider
+-added dialogue to the seedicider, not done
+-fixed the ladder at dks
+-added dyes, and some new items to elite clue scrolls. third-age also added to hard and elite and hard clues
+-redcuced the amount fo clues you had to do to get a reward, clues will now be more attractive
+-clue scroll rewards now show on the interface
+7/7
+-removed the whole loop from the crystal chest
+8/7
+-redid the crystal chest loot, now gives more usefull things
+-working on chinchonpa ranged, almost done, todo: remove gfx from all the target, let it remove from equipment
+-fixed chins
+-fixed ovl not giving extra stats
+-started on a small quest at home where you need to bring supplies to someone to enter his dungeon. after you do this you can enter the celestial dungeonµ
+9/7
+-there are now 5 different death animations with gfx, which the player will randomly get when he dies
+-home teleport is now arcane teleport
+12/7
+-added zen resting and arcane resting
+-added donator commands
+-added arcane cooking
+-fixed item on object, was blocked by a bad packed.
+-added partyhat firemaking
+-updated bones on altar emote to the current emote
+-portable range now gives bonus exp while cooking and has a 5% chanche of doubling ur product (like in the real game)
+-increased the duration of portables by 5x
+-fxid the perk of the smithing cape
+-added some more teleports to the skilling teleport interface
+13/7
+-crematation added (bones on fire)
+14/7
+-cyrstal tree shards now (re)spawn every hour
+-removed home welcome message
+-started on spirit gems
+ °spirit gems now display how much charges they have left
+ ° you can only have gem active
+ ° todo fix bug where you get more pouches than charms
+-started on prifindas thieving
+-made an small enum with dinivation whisps
+16/7
+-spawned celestial dragons
+-finished hiddentrapdoor
+17/7
+-gave yani a dialogue
+-started on getrude, she spawns every 3/5 hour randomly first person can unluck a kitten.
+18/7
+-added super saradomin brews
+-players can now make saradomin brews
+-you need to unlock the recepie b4 you can make them
+-started on loyalty system, 
+°added tokens
+°every half hour you get 250 tokens
+°made a dialogue for xuan
+°nothing going to use the interface.
+-added playtime counter
+-players can claim loyalty crown every 7 days they play, goes up 2 10 weeks
+-decreased the amount of power tokens you get from skilling
+19/7
+-reworking farming
+ °flower patch done
+26/7
+-you can now charge ur blood neck
+-powertokens and godbooks are not tradebale
+-started on godbooks
+-cleaned itemconstants a bit
+ -god books can now be filled
+ -can preach
+°todo find animations for ancient and bandos
+30/7
+-runespan controller now works
+-infinity ethereal armour now grand you free movement throu runespan +exp bonus in runespan
+-noods are now also spawned in runespan
+-now logs the amount of creatures you have siphoned
+-new challange, siphon 250 creatures = teleport to med and high level runespan
+-changed the spawn locations of noods a bit cause some were bugged spawned
+-blood ethereal armour now grands double blood runes while crafted + exp boost
+31/7
+-you can store 6 essences in your blood ethereal outfit
+-disabled defence emote because it caused lagg so you couldn't ran away
+-int in settings where you can add the npc's who can't respawn
+-changed the combat animations back to 718, because the eoc combat emotes looked horrible and where out of sinc
+-item destroy option added
+-added more teleports top the skilling and pvm teleports
+1/8
+-raid place is now multi
+-raid npc's don't respawn anymore
+2/8
+-removed random spawned objects/npcs from the server
+6/8
+-runespan updates
+°creatures now give points + noodes 2
+°started on runespan point shop, not the same as in rs.
+-law and death ethereal armour now also stores pure ess
+-removed the null bug at the specate panel
+7/8
+-made a dialogue with commonly asked questions
+14/8
+-bamboo ladders are now climbable
+-removed spam messages from necrolord
+-disabled teleport attack from necrolord since it bugged a lot
+16/8
+-gfx showns when you wear an item that's degradable
+-now displays render emote when openening equipment bonus screen credits to andreas!
+-i think i fixed the spawn bug
+22/8
+-added dragon pick (g) mining animations
+23/8
+-right click health cure posion
+-added slayer dart with reqs
+-changed home
+26/8
+-added runecrafting altar teletabs
+28/8
+started on a 830 item editor, works only need to make the item list appear
+29/8
+-ring of life now has his effect
+-defence master cape now has a ring of life passive
+-master ranged cape now has the ava's effect
+-fixed the spawn bug for real this time, was due some codes i riped from hyperion, lesson = check it
+-players can now see how much kills the owner of a pet has just by clicking on it
+-added chaos element pet and dark lord
+-you can now make battlestaves
+-started on boss pet dialogues, bandos,arma and zamorak done. takes quite some time...
+30/8
+-master attack cape perk added
+-owners can now hit higher than cap damage
+31/8
+-blinks drops have been revamped, now drops hybrid armour
+-added dungeoneering arrows gfx 
+-fixed corp safespotting
+1/9
+-prayer master cape now has a message
+-added nex pet dialogue
+ °special dialogue when wearing a zyrte bow
+ °special dialogue when you are at the nex room
+ °special dialogue when you are ate the gwd room
+ ° + 3 other random dialogues
+-players their join date now gets logged
+-fixed the bug where new players get messages from their slaves which they hadn't bought op
+-fixed the chathead of the look changer
+7/9
+-fixed my item editor
+-changed the layout abit 
+-changed the equiptype from seedicider bonecrusher, charming imp, sign of life to the auro spot. they were send to equipid 17 which does not exist in 718 servers
+-sign of life effect added
+-added slayer teleport tabs
+-added dwarf traders 
+-removed some items who gave falls thieving bonusses
+-added thieving teleport dialogue
+-charms now have an upgrade function
+-coins now have a drop-x option
+8/9
+-gathered some information for pyramid plunder
+-started on urns, fishing urns crafting done
+18/9
+-fixed the issue where the the runespan controler was removed after teleporting to runespan
+-skill of the hour, every hour there's another skill where you get double exp in
+-added the correct attack animations of abyssal demons + spec where they teleport
+24/9
+-added prifddinas thieving
+-added wall cracks thieving
+-added burthope agility
+-added a class for holiday events
+ °finished love notes
+ °finished present spawns for xmas 
+ °presents combining and opening
+25/9
+-added master thiefs in the wilderness, afk thieving like elves
+-added bob barter the decant npc
+-the destroy option will now show the amount of the item you want to destroy instead of only 1
+27/9
+-used hyperions leathercrafting was way more propper.
+-added sirenic crafting the right way
+-when examingen an item you now get the high alch value
+29/9
+-master thieves now can remove you from their castle 
+30/9
+-cash bags now remove when using
+-added slayer masks to sof
+-shout action of slayer masks now work
+1/10
+-slayer helmets can now be upgraded in the slayer shop
+2/10
+-worked a bit more on the slayer shop
+-slayer tabs can be crafted by using a slayer gem + chisel
+-hydrix gems can now be cut
+4/10
+-samid's gloves effect added; TODO: charges and gfx
+5/10
+-started on darts throwing projectiles, found dragon darts
+7/10
+-players can now get an abyssal orb and wand as drop
+-players can now lookup npc drops and search for specials items
+9/10
+-slayer helm kills left option added 
+-fixed slayergem not showing the correct task + right chat head
+-added bolt enchanting
+-revamped legendary pet exp system
+13/10
+-removed armadyl battlestaf from drop tabel of glacors, added shards instead
+-added wine of saradomin to the saradomin boss
+-protean leather(hides) crafting added
+14/10
+-added smithing area at home
+-players can get ancient fragments from a pickaxe while mining
+-20/10
+-added skilling crates with can be looted
+-check rescources option works on skilling crates
+-added a new npc at the smithing area where players can find more info about gilding pickaxes and a special pickaxe
+-lamps exp are now boosted by the server exp rate
+23/10
+-added agility,hunter,combat,crafting and fletching potion effect. idk why they weren't there
+30/10
+-pollmanger now works
+11/11
+-drygores are now degradeable
+-made 2 new interfaces in photoshop
+18/11
+-started on sql connections.
+-server now saves the amount of people who have the max,fire and tok cape in a database
+-added starter interface
+19/11
+-added another new interface
+-server intro almost done
+1/12
+-added item kits like orns etc..
+-split option added.
+-made a dialogue for zaria
+-players can now see how much master capes there are in game
+2/12
+-oyster pearls are now craftable
+-first click option of cyrstal key parts now work
+-changed the prices of the power token store+ added more items.
+-there's now an item which collects power tokens
+-removed usless drops from nex
+-added new cape interface for max and comp cape etc.
+8/12
+-forget to log
+-added drop counter interface
+-added the working dyes, everything is now support like rs3, use silk to remove
+-rock cake added
+-oyser pearls can now be opened
+11/12
+-added master quest cape
+-added rune dragons, todo texture
+-new interface
+-redoing the master cape inter
+-cleaned the server output
+-worked on my editor, more detailed object editor
+-started working on the donator room ( i edidted "dz" pits with iron pits aswell as celests. lots of room for rune.by liam)
+-added object renaming in the client
+18/12
+-refactored the client a bit
+-added home teleports
+-added stalls at home
+-added some decoration at home
+-added maxer npc
+21/12
+-added brian at home near bank. will be converting into paolo welcome npc.if brian is not used else where. by liam
+-added man at home for level one thieving. by liam
+-added some npc such ass celestal drags and pit iron drags in dz. left room for rune drags by liam
+-added ring (a) (i) 15016 made into a god ring. (FOR TESTING PURPOSES ONLY WILL DELETE ON RELEASE) by liam
+-added revs in the wildy imps and hbogoblins in low, orc,darks,drags in mid/high. by liam
+-added ::td command for tomrented demons that i placed in a dungeon. by liam
+-added ::dragrev will be making donors only. area. this will take you to a room with dragon revenants. by liam
+-added some boxes to block off a tunnel to mutants. from donor area ::dragrev.
+22/12
+-redone the preset system, still need to be tested
+-updated bank right click options
+-added more commands
+23/12
+-players can now see their saved presets
+-disbaled collecting interface, since there's no use for it atm.
+-changed the price of some items
+-lava sharks can now be shred
+-updated wildy chest rewards
+-added old armour looks for; bronze,iron,mithril,adamant and rune
+-added expert cape, same as a master cape but different symbol
+27/12
+-added new client loading background
+-removed runescape logo form the client
+-verry small begin at the sailing skill
+-added more things 2 the zaria dialogue
+-fixed a bug with the spectate panel which causes players to freez
+28/12
+-changed the name of the control panel + redid the sprites because they were done very badly
+-added a second page to the monster teleports, todo buttonhandler
+-added new shops at home
+-crosbows now load old model looks, old dds look
+-made frostyscache editor load my cache, better than my editor
+29/12
+-will be making donator commands today. which only donors can use.
+-need to find the rune dragon correct id. then will use npc editor
+30/12
+-added rune draggons in donor zone with combat deffinitions. 
+-added celestal in donor zone.
+-dropbox isnt syncing correctly (cant sync "main_file_cache.idx255") (permissions denied) - fixed
+-added objects in the donatorzone extreme teleport. 
+-added rocktails,cavefish,magic tree,rune ore,anvils,furnace,bankbooth.
+2/1
+-refactored npc defs a bit client sided
+-whenever you examine a npc you see his drops
+-started on rots
+3/1
+-refactored class 346 a bit
+-client snow can now be toggled
+-rots walls are now clipped
+4/1
+-added npc at home who can convert armor into oldschool armor looks, atm supports bronze... dragon
+-dark lord damage increase fixed
+5/1
+-found combat upcode
+-now only npcs with a combat level have the check drop option
+-client zooming has been added, use: shift+ mousewheel
+-tok-har capes now have stats
+6/1
+-snow disables shiny effect of items
+-added some donor stalls in normal donor zone.
+-added genstore in normal donator zone for the thieving stalls.
+-godswords are now convertable to old looks
+-added new store to extreme donors Of donor miner.
+-had to remove my dialogue due to inflictions with another value.
+7/1
+-added the website which isnt finished yet to button handler.
+-edited the general panel changed panel name to ZariaX and added Co-Owner.
+-finished araxxi.(16000hp now) drops better items such as 3rd age dye drgore barrows and drygore rapier 3rd age.
+-deleted araxxi. edited donors rune dragons to drop above. on a 2.0 chance.
+-tweaked celestal dragon a little making it harder and more rare drops of 0.01 chance. this can be found in rune dragon pit
+8/1
+-made a working and correct animation arraxi for ever one to fight. with a lenghty drop list.
+-arraxxor combat deffintions arnt sticking if possible delete packed spawns for me paolo. 
+-once done i want your opion on where to put it.
+-found the console write methode
+-started on the client special features
+-fixed the check drops option, now uses less memory + werks for every npc
+-arraxor is full functional now. fixed all animations. drops etc.
+-added zeke donator shop in dz.
+-added ecto tokens to rune dragon drop of drop rate of 90% dropping 5-10, for zeke donors shop.
+-scounting out a area for arraxxor to be placed, with portal interface teleport to arraxxor.
+-new area ::arax teleports you to dungeon which is quite spacious may add little spiders also changed attack of arraxor to special and now can hit 1200
+-ineed to add ::arax in home portal interface. maybe make a section for op boss list. 
+paolo can you add in arax for me in the portal.
+-gnome/burthope/barbarian agility laps now get logged
+-advanced cours now get logged
+9/1
+-removed a lot from the source
+-added max/comp/comp(t) reqs check
+-fixed dark lord
+10/1
+-Convince Paolo Not to Quit. Because He knows More Than He Thinks He Does.
+-fixed nex portal
+-fixed 3bosses which had fucked options
+-moved world gorger coords
+12/01
+- fixed transparentcy. need to fixx lights the a bit pixelated now and the shine from objects. 
+13/1
+-redid world gorger drops
+-now an achievement to mine redstone: limit is 70 each day
+-potion timers not get removed when you die
+-when you die you now respawn back at home
+-removed those stupid ecto tokens idk who added that
+-replaced the combat definitions with an old backup, the whole file wad fucked and don't want to look in 10k line for a error
+-dks now have the right animatios + gfx
+-glass machine now has a extra right click option for combinations flasks
+-while mining redstone there's a 20% chance you get a crystal-flecked redstone
+16/1
+-made a scroll where you can teleport too an saved location; todo--> controler check
+-fixed a bug where money was not removed from the pouch
+-started on a custom quest, speak to Zaria aka fame
+--> todo: finish dialogue where you get the rewards etc
+18/1
+-updated necrolord drops
+-finished end boss for the quest
+-quest done= reward; curses prayer 
+-old rune 2h models loaded ; todo recolour
+20/1
+-old dragon pick + all other pick
+-old dragon hatchet
+-removed ecto-tokens from some npc's
+21/1
+-added crystal chackram
+22/1
+-removd al the strange drops from runite dragons
+-added them in the wildy
+-added normal skillcape shop
+-added thieving master cape perk
+-updated squeel 
+-added al slayer tower models, so the slayetowner is now visbale again
+-fixed the bug with farming aswell, so farming works now finnaly!!
+23/1
+-godwars dungeon is now like the real 718's
+-loaden 718 npc's with rs3 npcs
+25/1
+-superior tetsu now has stats
+-spawned godwars npcs
+-fixed a lot of animtions from npc's
+-redid summoning
+-if your combat level is under 50 you get easier slayer tasks
+26/1
+-added home tour dialogue
+-added npc monster info interface
+27/1
+-fixed teleport interface
+28/1
+-partly fixed the food bug, where you couldn't run when you eat. still buggy thou
+-added torstol gloves effect
+-added blood runes gloves effect
+-added new hard task
+29/1
+-loaded 865 items aswell
+-Fixed the food bug 100%
+-spawned edimmu's in the elite dungeon
+-every monster in the elite dungeon drops a different kind of tip, which you can add to the boots from glacors
+-would like to add a item/weapon that is only obtainable through time spent ingame like loyalty. and no other server has it.
+i could prob make one if i can find a editor.
+30/01
+- sea troll queen added in seatrollqueen tele. need testing.
+31/1
+-fixed a bug with the  gwd killcounts
+1/2
+-fixed gwd teleport to the wrong location
+-added gwd soulstone effects which require no kc to enter the room.
+-now removes the gwd interface upon teleporting
+-sea troll queen has now an area, + basic combat, drops spawn on land not in the water
+2/2
+-started on redoing the perk system
+*you now need to destroy wealthy items to get those perk points to unlock perks (kinda like invention)
+*so items like armadyl buckler etc have a purpose
+4/2
+-added crystal axe defs
+-players can now create crystal items
+-pickaxes and axes can now be added to the toolbelt
+13/2
+-started on wildy achievements
+-blood furry healing and charge consuming done
+14/2
+-farming cape ability added, you get noted items instead of normal items while harvesting
+-made a class for itemOptions handling, looks better and buttonhandler is not a mess anymore
+-first click option at gems working now
+-soul amulet can now be crafted
+-drop warnings can now be toggled
+-fixed a bug with the bonefires
+15/2
+-removed some text from the login screen
+-started on a interface for cosmetics and titles
+-trees in the donator zone will not be transformed into a stump
+16/2
+-added corporealpuppy dialogue
+-added kingblackdragonling dialogue
+-added ellie dialogue
+-started on boss pet overrides
+-coins and power tokens can not be stored 
+18/2
+-new interface
+-fixed the bug with the summoning familiars not getting called
+- bunyip passive healing effect added
+-fixed pack yak winter storage
+-did some fixes on the server introduction
+22/2
+-fixed dragoonn cannon setup
+26/2
+-fixed a lot of messy code
+-added lucky potion effect 
+-added lucky potion recipe
+-added custom dragon crossbow
+27/2
+-added wilderness bow
+ *best bow ingame
+ *can only be used in the wilderness
+ *when you die with it you lose everything
+-added dragonpick to kbd droptable
+-death touch darts have been added 
+28/2
+-new slayer rewards
+ * you can now add donecrusher, herbicide, gold accumulator to your toolbelt
+-redid note paper, now works as it should
+-note paper creation is reduced from 15 to 3 per log
+-master command now only gives 14m exp
+-reaper task have been added
+ *only for maxed out people 
+-did some home decoration xd
+1/3
+-bird nest will now be dropped while wootcutting and can be looted
+-sirenic / tectonic crafting redone
+-crystal and potion flaks crafting done
+-inferno adze effect added
+-potions can now be decant to eachother
+-same for flasks
+-todo potions into flasks
+-added combination potion creation (only the ones i'm going to use)
+2/3
+-added ascencions
+-fix dark lord bug, with double spawn
+-redid combat, is now with rs3 animations since the old animations looked bugged
+-almost every 90+ weapon has stats now
+-fixed error messages with potion decanting
+3/3
+-fixed the bug where items transformed while equipping; cause: random old sheat mothod from idk which time
+-hunter master cape perk added, will increase box time by 10 times
+4/3
+-input scripts now get closed when walking away, credits 2 hellman
+5/3
+-prices now get loaded from the cache
+-you now have a attack emote while wearing no weapons
+-redid some shops
+-botanist set bonus exp added
+-fix appearance with gloves
+7/3
+-you can now see the stats of an item while clikcing check stats
+-malevolent armour crafting added
+9/3
+-cleaned the code from the slayertabs
+12/3
+-updates home defender quest a bit
+-yak stick hunter effect added
+-redid hunter a bit
+-added a new medium task
+-worked more on the perk interface
+15/3
+-you can now block slayer tasks
+-redid the slayer interface a bit
+-changed some npcs amounts for slayer tasks
+-offhand animations done for melee, and crossbows
+-you can now charge you silverhaw boots, and check the amount of charges
+17/3
+-worked on avaryss combat system, like 90% done 
+19/3
+-barbarian fishing added
+-fixed catching delay, you won't get a full inv of sharks in 1min lol
+24/3
+-global countings now get written 2 a file instead of the database(makes it easier and cheaper 2 host)
+ *logs npc kills
+ *npc drops
+ *master capes + some special capes
+27/3
+-redid potion timers, they now are counter per minute
+28/3
+-removed a lot of stuff
+-added a class for handling points (like slayer and vote points)
+-started on currency pouch interface
+-money pouch now has a curreny pouch option
+29/3
+-currency pouch interface added
+-finished pointsManager
+7/4
+-forget 2 log oops
+-new achievements interface added
++ redid the whole interface class
+-Currency pouch interface added
+-elite dungeon is now unlockable
+-10/4
+-fixed wooductting message from ivys
+-loyalty shop done
+-powertokenshop done
+11/4
+-fixed cyrstal items
+-fixed achievements inter
+-fixed drop nulpointer
+-added warning with cosmetics
+-fixed examine close button
+12/4
+-fixed barrows objects
+-added new achievements
+-zaria now opens power token shop
+-updated cyrstal chest loot
+-redid dragonstone armor
+-fixed donator crowns
+13/4
+-bought map client
+-fixed walking bug
+14/4
+-fixed object bug
+started on port
+-redid second teleport page (now has more 865 teleports)
+-fixed cape counting
+15/4
+npc clicking bug fixed
+automatoms added
+-fix coins and charms
+-fixed home gate
+-wilderness course now has a level req
+-fixed drop pickup
+-fixed magic shop
+-rewrote the whole slave stuff was written so bad lol
+-fixed charm drops from the sea troll queen
+-added messages when clicking an Item
+-fixed portean items
+16/4
+-fixed alchemy prices
+-removed unused items from shops
+-added plank making and super heating
+-fixed prices for; black/mithril and infinity sets
+-slayer task level fixed
+-get slayer option added
+-fixed slayer interface
+-silverhawks nerfed + emote added
+-redid teleport interface
+-fixed slaves
+-power tokens increased
+-fixed effigy, skills now get locked + right emotes
+-increased dung exp
+-get more runes now
+-added more items to the shop
+-nerfed desert damage
+-more teleports added
+-slave interface added
+-fixed hunter leveling icon
+-hydrix gem crafting emote added
+-added new enchating emotes
+-added orb chargin, supports every element
+-updated bolts enchanting emote
+-protean logs are now craftable
+23/4  forget to log again, prob missed so much lol
+-redid the whole player shops
+-fixed darklord objects
+-fixed slayergate animations
+-added more items to shops
+-fixed blood eth set
+-added blink into the wildy
+-made a lot of item untradeable
+-fixed double slayer points effect
+-added another spotlight
+-updated tasktasb, new get refrezshed when you click
+-added serreb stones
+-fixed bug with mapbuilder
+-added ape a tol 
+-added corrupted ore
+-added protean bars
+-fixed barrwos chest loot
+-added lava flowmine
+-added some npc anomations
+-fix charming imp drop bug
+-added construiction shop at the portal of poh
+-fixed double drops events
+-added loading screen when joining your house
+-rewrote the whole slave class
+-rewrote the whole springcleaner class
+-rewrote daily tasks, base is from hch47 thx to him
+-did more on achievements
+--Started on dungeoneering
+  -map loading done
+  -binding done
+  -npc spawns done
+  -item spawn begin done
+  - nodes spawn almost done (needs bufs)
+  -dung mining done
+  -dung foods added
+  -started on runecrafting
+6/5 once again not logging lol
+-added perk interface
+-perk class done
+-fixed bugs with the shops where you couldnt buy certain amount
+-added blink and gave him drops
+-pot timers now get removed when you die, also get removed when they are done
+8/5
+-fixed springcleaner
+-fixed siverhawk feathers
+31/5
+-rewrote boss pet system
+-added pickaxe gildingµ
+-slayermasks done
+-starter on a title handler
+-fixed dung master cape emote
+3/6
+-added boss timers (how fast you kill the boss)
+20/06
+-add inter for boss timers
+-added hof interface
+-puro puro added
+-fixed the bank equipment bonusses bug
+-rewrote cosmeticshandler + keepsake keys
+7/7 once again didn't log much
+-rewrote wildy events
+-finished wily bow
+-introduced wily perks
+-redid console panel
+-fixed some interfaces
+-started on player owned ports

@@ -1,0 +1,9 @@
+26/02
+-Upgraded client and server to 887
+-Fixed maxhit bug from npc's with no definition
+27/02
+-fixed construction (options changed)
+01/03
+-fixed construction options spawn (options changed, so checks were wrong)
+-pets can now be stored inside your house and will be spawned in free mode
+-preset button added to the bank 

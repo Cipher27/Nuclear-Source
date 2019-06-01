@@ -1,0 +1,47 @@
+Comabt:
+4460 smoke ring entrance
+~5000 arraxor
+
+4073 - green, cool, potential boss gather gfx
+
+4115 fire/lava projectivle, 4116 explosion
+4121 fire/lava fall from sky and eplode. good for after a ground stomp
+
+4130 charge, 4131 explosion (electric/blue)
+
+
+
+4171, red circular target indicator
+4175, bigger red cirulcar target indicator
+
+4196, blue health/prayer recharge anim (when standing in an area)
+
+
+4428 marked for attack
+4303 pickup green powerup
+
+
+4409 firewalls ?
+4705 poison fog
+4430 poision status effect
+4153 green, status effect
+4613 green dust effect
+
+4287 fun hits (kapow, pop, etc)
+
+4673 lava drop
+4675 lava shot
+
+
+4416 purple cilinder
+
+4531 player stunned
+
+MISC:
+4422 rare drop indicator
+4476 massive pillar comes out of ground
+4706 green ring indicator
+4820 red exclamation mark overhead
+
+SKILLS:
+4238 divination

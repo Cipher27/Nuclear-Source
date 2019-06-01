@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="data/libs/FileStore.jar"/>
+	<classpathentry exported="true" kind="lib" path="data/libs/netty-3.6.6.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="data/libs/RuneTopListV2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="data/libs/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<accessrules>
+			<accessrule kind="accessible" pattern="javax/mail/**"/>
+			<accessrule kind="accessible" pattern="java/security/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/guava-18.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/motiservice-api-1-0-2.jar"/>
+	<classpathentry kind="lib" path="data/libs/javamail-1.4.5/mail.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/everythingrs-api.jar"/>
+	<classpathentry kind="lib" path="lib/DiscordBot.jar"/>
+	<classpathentry kind="lib" path="lib/Discord4j-2.8.4-shaded.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

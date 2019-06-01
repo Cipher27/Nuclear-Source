@@ -1,0 +1,26 @@
+player.getInterfaceManager().sendInterface(3003);
+				if (item.getDefinitions().getEquipSlot() == 0){ //helm slot
+					player.getPackets().sendItemOnIComponent(3003, 1,  item.getId(), 1);	
+				}if (item.getDefinitions().getEquipSlot() == 2){ //amulet slot
+					player.getPackets().sendItemOnIComponent(3003, 2,  item.getId(), 1);	
+				}if (item.getDefinitions().getEquipSlot() == 4){ //plate slot 
+					player.getPackets().sendItemOnIComponent(3003, 3,  item.getId(), 1);	
+				} if (item.getDefinitions().getEquipSlot() == 7){ //legs slot 
+					player.getPackets().sendItemOnIComponent(3003, 4,  item.getId(), 1);	
+				} if (item.getDefinitions().getEquipSlot() ==10){ //boots slot 
+					player.getPackets().sendItemOnIComponent(3003, 5,  item.getId(), 1);	
+				}if (item.getDefinitions().getEquipSlot() == 14){ //aura slot
+					player.getPackets().sendItemOnIComponent(3003, 6,  item.getId(), 1);	
+				}if (item.getDefinitions().getEquipSlot() == 1){ //cape slot
+					player.getPackets().sendItemOnIComponent(3003, 7,  item.getId(), 1);	
+				}if (item.getDefinitions().getEquipSlot() == 3){ //weapon slot
+					player.getPackets().sendItemOnIComponent(3003, 8,  item.getId(), 1);	
+				}if (item.getDefinitions().getEquipSlot() == 9){ // gloves slot 
+					player.getPackets().sendItemOnIComponent(3003, 9,  item.getId(), 1);	
+				}if (item.getDefinitions().getEquipSlot() == 13){ //arrows slot
+					player.getPackets().sendItemOnIComponent(3003,10,  item.getId(), item.getAmount());	
+				}if (item.getDefinitions().getEquipSlot() == 5){ // shield slot 
+					player.getPackets().sendItemOnIComponent(3003, 11,  item.getId(), 1);	
+				}if (item.getDefinitions().getEquipSlot() == 12){ // ring slot 
+					player.getPackets().sendItemOnIComponent(3003, 12, item.getId() , 1);	
+				}

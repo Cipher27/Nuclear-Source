@@ -1,0 +1,5 @@
+14022 :-> checkmark sprite
+14023 inventory space
+14024 -> box
+14025: armour frame
+14026: background

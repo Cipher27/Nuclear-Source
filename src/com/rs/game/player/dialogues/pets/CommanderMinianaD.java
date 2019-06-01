@@ -1,0 +1,101 @@
+package com.rs.game.player.dialogues.pets;
+
+import com.rs.game.player.dialogues.Dialogue;
+import com.rs.utils.Utils;
+
+public class CommanderMinianaD extends Dialogue {
+
+    private int npcId ;
+    int random = Utils.random(3);
+    @Override
+    public void start() {
+    	npcId = (Integer) parameters[0];
+		if (player.isAtGodwars()){
+		sendNPCDialogue(npcId, 9827, "When I'm here I feel so close to Saradomin."); //only in gwd normally and done
+        stage = 30;		
+		}
+		else if (random ==0){
+	    sendPlayerDialogue(9775, "Rarr! All hail the Big High War God!"); 
+		stage = 1;
+		}else if (random == 1){
+		sendNPCDialogue(npcId, 9827, "Do you know why Graardor received his name?");
+        stage = 10;		
+		}else if (random == 2){
+		sendNPCDialogue(npcId, 9827, "Good day, Player.");	
+		stage = 20;
+		}
+    }
+
+    @Override
+    public void run(int interfaceId, int componentId) {
+     //first
+   	 if(stage == 1) {
+   		sendNPCDialogue(npcId, 9827, "Are you making fun of me?");
+   		stage = 2;
+ 	 } else if (stage == 2) {
+  		sendPlayerDialogue(9775, "Only a little bit.");
+		stage = 3;
+  	} else if(stage == 3) {
+   		sendNPCDialogue(npcId, 9827, "Quite insensitive, if you ask me. You do know he's dead, don't you?");
+   		stage = 4;
+ 	 } else if (stage == 4) {
+  		sendPlayerDialogue(9775, "Sorry.");
+		stage = 100;
+  	} //second
+	 else if (stage == 10) {
+  		sendPlayerDialogue(9775, "No?");
+		stage = 11;
+  	} else if(stage == 11) {
+   		sendNPCDialogue(npcId, 9827, "Well you see, back home we had these massive doors, and when Graardor was younger he'd never be able to open them. He'd yell and cry pushing them, like 'Graaaarrr!'. So we called him Graardor!");
+   		stage = 12;
+ 	 } else if (stage == 12) {
+  		sendPlayerDialogue(9775, "Is that true?");
+		stage = 13;
+  	} else if(stage == 13) {
+   		sendNPCDialogue(npcId, 9827, "No...");
+   		stage = 100;
+ 	 }//3th
+	 else if (stage == 20) {
+  		sendPlayerDialogue(9775, "You're quite eloquent for an ourg...Not like Graardor at all.");
+		stage = 21;
+  	} else if(stage == 21) {
+   		sendNPCDialogue(npcId, 9827, "Ah, yes. I suppose I am somewhat of an anomaly. Due to my small stature I was of no use to the ourgs. I was never trained to fight, so I chose to learn instead.");
+   		stage = 22;
+ 	 } else if (stage == 22) {
+  		sendPlayerDialogue(9775, "I think I like you more.");
+		stage = 100;
+  	} //4th
+	else if (stage == 30) {
+  		sendPlayerDialogue(9775, "When you're in a frozen dungeon, watching Zilyana fighting to the death?");
+		stage = 31;
+  	} else if(stage == 31) {
+   		sendNPCDialogue(npcId, 9827, "She fights in the name of Saradomin. It's wonderful, isn't it?");
+   		stage = 32;
+ 	 } else if (stage == 32) {
+  		sendNPCDialogue(npcId, 9827, "We are honoured to be Saradomin's sword. His messengers.");
+		stage = 33;
+  	} else if(stage == 33) {
+   		sendPlayerDialogue(9775, "Uh huh...");
+   		stage = 34;
+ 	 } else if (stage == 34) {
+  		sendNPCDialogue(npcId, 9827, "Am I boring you, Player?");
+		stage = 35;
+  	} else if(stage == 35) {
+   		sendPlayerDialogue(9775, "Oh no, of course not. I've never heard either of you talk about Saradomin before.");
+   		stage = 100;
+ 	 }
+	
+	
+	
+	
+	else if (stage == 100){
+		end();
+	}
+	}
+
+    @Override
+    public void finish() {
+
+    }
+
+}

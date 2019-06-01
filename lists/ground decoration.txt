@@ -1,0 +1,144 @@
+997 fence
+1854 Window wall
+890, 891 Paintings
+1911 BRICKWALL
+1415 TANWALL
+3152 TANWALL2
+4739,4736,22 GRASS
+124,10 BUSHES
+196, TORCH
+324 SHIT
+336 ROCKS
+174 Broken Pottery
+175 Broken bottles
+1248 Some sticks
+1244,1245 Rock and grass
+827,825, Broken armor
+320 Brown Rocks
+321 Brown Rocks Bigger
+326 Darker Brown Rocks
+1188 Red and cyan flower
+1187 Cyan flower
+1188 Red Flower
+1349 Large plant
+1393 Medium plant
+445 Boulder medium
+444 Boulder large
+1770 Wooden wall
+1631 Deteriorated wall
+1620 Deteriorated cornerstone
+1624 Deteriorated wall 75% intact
+997 Chainlink fence
+1840 Window maybe
+1415 Bright white wall
+3729 Picket fence
+876 Drain maybe
+5440 Dark wall light interior
+5336,5338 Spooky grass
+6145 Gray wall
+1089 Trashed chair
+1246 Stick
+1265 Leaf pile
+
+WORLD OBJECTS
+booth separator 1000
+bank table 590, 591
+large plant 1391
+med plant 1393
+brick column 1911
+wood texture table 595
+brown bed 419
+wooden stool 1102
+brick chimney 1923
+textured crate wood x 357
+textured crates stacked 358
+shelves I 1018
+shelves II 1016
+empty shelves 1014
+wood drawers 350
+potted fern 1154
+potted memosa? 1158
+wooden stairrail 994
+wooden column 1870
+textured bookcase 380
+cage 6836
+cage floordec 6838
+wooden fence 980
+burning fireplace 2724 8712
+wood red chair 1090
+altar 409
+green picnic bench 9291
+corpse 662 661
+metal door 1534
+
+FLOOR DECORATIONS 
+opulent red carpet corner 925
+opulent red carpet side 926
+opulent red carpet center 927
+sprinkled grass 1261
+green jizz 9701
+
+WALL - use type 0 
+whitewashed stone 9473
+convex stacked stones 9596
+
+WALL DECORATIONS - use type 4 or 5
+hardware store panel 2784
+gray grated window 1841
+brown blinds window 1838
+horizontal window 1821
+horizontal window boarded 1825
+horizontal window shattered 1843
+bloody nails 656
+
+MAPICONS - use type 22
+shop 2733
+sword 2734
+rune 2735
+battleaxe 2736
+helm 2737
+bank 2738
+quest 2739
+amulet 2740
+pickaxe 2741
+furnace 2742
+anvil 2743
+training 2744
+dungeon 2745
+staff 2746
+platemail 2747
+platelegs 2748
+sword 2750
+range 2751
+shield 2752
+prayer 2752
+rings 2754 
+herbs 2753
+gem 2755
+gem 2756
+fishrod 2758
+fish 2759
+clothes 2760
+potion 2761
+silk 2762
+pie 2763
+beer 2764
+hammer 2765
+brownclothes 2766
+tree 2767
+wheel 2768
+spool 2769
+cutlery 2770
+water 2771
+pot 2772
+skirt 2773
+clay 2774
+mill 2775
+pickae 2776
+platemail 2777
+? gray rock or something 2778
+furs 2779
+? molten rock in a gray pot 2779
+guide 7054
+churn 10095
+spade 8719

@@ -1,0 +1,127 @@
+package com.rs.game.player.content.perks;
+
+import java.util.HashMap;
+import java.util.Map;
+/**
+ * 
+ * @author paolo
+ *
+ */
+
+public class ItemValues {
+
+	/**
+	 * enum of all the values a item is worth in points
+	 * @author paolo
+	 *
+	 */
+public enum DestroyAbles{
+		
+		BANDOS_CHESTPLATE(11724,2),
+		BANDOS_HILT(11704,3),
+		BANDOS_TASSET(11726,2),
+		BANDOS_BOOTS(11728,1),
+		BANDOS_GLOVES(12025,1),
+		BANDOS_SHIELD(25019,1),
+		BANDOS_HELM(25022,2),
+		ARMADYL_HILT(11702,3),
+		ARMADYL_HELMET(11718,2),
+		ARMADYL_CHESTPLATE(11720,2),
+		ARMADYL_PLATESKIRT(11722,2),
+		ARMADYL_BOOTS(25010,1),
+		ARMADYL_BUCKLER(25013,1),
+		ARMADYL_GLOVES(25016,1),
+		ARMADYL_CROSSBOW(25037,1),
+		SUBJUGATION_HOOD(24992,2),
+		SUBJUGATION_GARB(24995,2),
+		SUBJUGATION_GOWN(24998,2),
+		SUBJUGATION_WARD(25001,1),
+		SUBJUGATION_BOOTS(25004,1),
+		SUBJUGATION_GLOVES(25007,1),
+		ZAMORAK_HILT(11708,3),
+		ZAMORAKIAN_SPEAR(11716,1),
+		SARADOMIN_HILT(11706,3),
+		SARADOMIN_SWORD(11730,1),
+		SARADOMIN_WHISPER(25028,1),
+		SARADOMIN_HISS(25031,1),
+		SARADOMIN_MURMUR(25034,1),
+		WHIP(4151,1),
+		FURY(6585,1),
+		DARK_BOW(11235,1),
+		DRAGON_HATCHET(6739, 1),
+		STAFF_OF_LIGHT(15486, 1),
+		SEERS_RING(6731, 1),
+		ARCHERS_RING(6733, 1),
+		WARRIOR_RING(6735, 1),
+		BESERKER_RING(6737, 1),
+		HOLY_ELIXIR(13754, 1),
+		ONYX(6573, 1),
+		BLOOD_NECKLACE_SHARD(32692, 2),
+		GLAIVEN_BOOTS(21790, 2),
+		RAGEFIRE_BOOTS(21793, 2),
+		STEADFAST_BOOTS(21787, 2),
+		DRACONIC_VISAGE(11286, 3),
+		TORVA_HELM(20135, 3),
+		TORVA_PLATEBODY(20139, 3),
+		TORVA_PLATELEGS(20143, 3),
+		TORVA_GLOVES(24977, 3),
+		TORVA_BOOTS(24983, 3),
+		VIRTUS_MASK(20159, 3),
+		VIRTUS_TOP(20163, 3),
+		VIRTUS_LEGS(20167, 3),
+		VIRTUS_GLOVES(24980, 3),
+		VIRTUS_BOOTS(24986,3),
+		PERNIX_COWL(20147, 3),
+		PERNIX_BODY(20151, 3),
+		PERNIX_CHAPS(20155, 3),
+		PERNIX_GLOVES(24974, 3),
+		PERNIX_BOOTS(24989, 3),
+		ARCANE_SIGIL(13746, 4),
+		DIVINE_SIGIL(13748, 4),
+		ELYSIAN_SIGIL(13750, 4),
+		SPECTRAL_SIGIL(13752, 4),
+		DRYGORE_LONGSWORD(26587, 4),
+		OFF_HAND_DRYGORE_LONGSWORD(26591, 4),
+		DRYGORE_MACE(26595, 4),
+		OFF_HAND_DRYGORE_MACE(26599, 4),
+		DRYGORE_RAPIER(26579, 4),
+		OFF_HAND_DRYGORE_RAPIER(26583, 4),
+		ZARYTE_BOW(20171, 4),
+		VIRTUS_WAND(25654, 4),
+		VIRTUS_BOOK(25664, 4),
+		ASCENSION_CROSSBOW(28437, 4),
+		OFF_HAND_ASCENSION_CROSSBOW(28441, 4),
+		SEISMIC_WAND(28617, 4),
+		SEISMIC_SINGULARITY(28621, 4);
+		
+		
+		
+		
+		private static Map<Integer, DestroyAbles> items = new HashMap<Integer, DestroyAbles>();
+
+		static {
+			for (DestroyAbles destroy : DestroyAbles.values()) {
+				items.put(destroy.getItemId(), destroy);
+			}
+		}
+
+		public static DestroyAbles forId(int id) {
+			return items.get(id);
+		}
+		
+	private int itemId,pointsAmount;	
+	
+	public int getItemId() {
+			return itemId;
+	}
+	
+	public int getAmount() {
+			return pointsAmount;
+	}
+		
+	private DestroyAbles(int itemid, int amount){
+		itemId = itemid;
+		pointsAmount = amount;
+		}
+	}
+}

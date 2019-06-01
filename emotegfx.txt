@@ -1,0 +1,166 @@
+Code:
+ //Melee
+Fury - 18203
+Slaughter - 18204
+Stab - 18225-18227
+Offhand stab - 18239
+Pulverize - 18540
+Nox Scythe - Pulverize - 18595
+2h - Kick - 18542
+Smash - 18543
+Fury/Assult - 18546
+2h - Fury/Assult - 18549
+Nox Scythe - Fury/Assult - 18552
+Swords - Punish - 18560
+2h - Punish - 18563
+Nox Scythe - Kick - 18565
+Berserk - 18569
+Frenzy - 18585
+Slaughter - 18590
+
+//Wields
+2h Crossbow shoot - 18232-18233
+//Magic
+Offhand Spell Casting - 18249-18290
+Staff Casting - 18300
+2h - Wrath - 18355
+Wrath duel - 18357
+Rush - 18358
+Omnipower - 18364-18370
+Duel Wield - Fire breather - 18371
+2h - Fire breather - 18374
+2h - Wrath - 18379
+2h Wild Magic - 18380
+Duel Wield - Magic Stun - 18392
+2h - Magic Stun - 18396
+Duel Wield - wrath - 18426
+2h - Wrath - 18428
+Duel Wield - 18449
+2h - Wrath - 18452
+
+//Range
+2h - Bind - 18459
+Javilin - Bind - 18460
+Crossbow - Bind - 18461
+2h Crossbow - Bind - 18462
+Crossbow - Snipe - 18466
+Javilan - Snipe - 18467
+2h Crossbow - Snipe - 18468
+Crossbow - Rapid fire? - 18470
+Shield bow - Snapshot - 18471
+Crossbow - Snipe - 18473
+2h Crossbow - Snapshot - 18476
+Shield Bow - Rapid fire? - 18481
+Crossbow - Rapid fire - 18486
+2h Crossbow - Rapid fire? - 18488
+2h Crossbow - Bombard - 18509
+Sheild bow - Jump back - 18527
+2h Crossbow - Rapid Fire - 18532  !!!
+Shield bow - Rapid Fire - 18533 !!!
+Vials - 3613
+KK Proj - 3743
+KK Proj - 3758
+Lava Proj - 3766
+Lava Proj - 3768
+Fire Proj - 3822
+Cupid arrow - 3841
+Concentrated Blast Proj - 3903
+Needle shot Proj - 3906
+vorago blue Proj - 4016
+vorago red Proj - 4023
+//Misc Combat
+
+Stun - 3814
+
+//Melee 
+
+Blood tendrils target - 4662
+Quake - 3853
+
+//Magic
+
+Concentrated Blast - 3900
+Concentrated Blast target - 3904
+Sunshine - 4230, 3856
+Berserk - 3617
+Baracade - 3632
+Omnipower Proj - 3743
+Combust - 3812, 3821
+Shadow tendrils target - 4661
+
+//constitution
+Ice asylum tile - 4668
+
+//Range
+Bombard - 3688
+Death's swiftness - 3869
+Needle shot - 3905
+Needle shot target - 3907
+Dazing Shot - 3909
+Smoke tendrils target - 4663
+Dazing Shot target - 3910
+
+//Respawn
+greater demons - 3806
+Demon flash mob - 3808
+Demon flash mob - 3809
+Demon flash mob - 3810
+
+//Death
+Greater demons - 3658
+Black Demons - 3776, 3777, 3778, 3779, , 3780, 3781
+Kalgerian Demon - 3786
+Kalgerian Demon - 3787
+Kalgerian Demon - 3788
+Water death emote - 3956
+Earth death emote - 3957
+Fire death emote - 3958
+
+//Npc Gfx
+KK Mage Att - 3752
+
+//Sink Holes
+Cards - 3830
+Cards into chest - 3831
+Chest appears - 3832
+Cards above chest - 3834
+
+//Emotes
+heart emote? - 3842
+more heart shit - 3844
+saradomin teleport - 3846
+zaros teleport - 3847
+guthix teleport - 3848
+zammy teleport - 3849
+clan vex teleport - 3865, 3866, 3867
+super hero teleport - 3890
+tree teleport - 3895, 3896
+guthix butterfly hp - 3912
+guthix butterfly prayer - 3913
+guthix butterfly agility - 3914
+guthix butterfly summoning - 3915
+guthix butterfly emote - 3916
+guthix butterfly emote - 3917
+cockatrice emote - 3920
+basalisk emote - 3921
+kurask emote - 3922
+crawling hand emote - 3923	
+crawling hand emote - 3924 
+crawling hand emote - 3925
+crawling hand emote - 3926
+crawling hand emote - 3927
+exclamation mark - 3928
+Rune resting emote - 4003-4005
+vacume fishing - 4007
+rune walk teleport - 4010
+vorago blue proj explode - 4017
+vorago red proj explode - 4024
+super teleport emote - 4504
+super teleport emote - 4505
+cupid emote - 4570- 4572
+silver hawk boots xp gfx - 4605
+portable saw mill - 4636
+
+//Attack gfx - monsters
+ascension bosses - 3974-3993
+rorarius - 3995

@@ -1,0 +1,29 @@
+3171 - ice arrow
+3208 - arrow pointing
+3461 - explose firemaking
+3493 - dragon projectile
+4570 - cupid shooting arrows at you
+4604 - silverhawk run id
+4605 - silverhawk feathers emote
+4900 4915 - footbal emotes (kicking balls)
+4926 - moon and white flash
+4938 - tornado
+4950 - new dragon long spec
+4951 - dragon mace
+5185 - ghost spawns
+5196 -random green smoke
+5176 - random yellow smoke following you
+5170 - body lightly glowing
+5168 - protean trap
+5167 - protean trap
+5166 - protean trap
+5164 - new resting gfx (crystal resting)
+5162 - special pickaxe flying away
+5149 - imp in a jar
+5146 - crystal chakram gfx
+5145 / 5144 - strange skin leaping up
+5129 - new ovl emote
+5121 - combining crystals 
+5117 - special emote (skilling)
+5113- special skilling emote
+5106 - new thieving stunn

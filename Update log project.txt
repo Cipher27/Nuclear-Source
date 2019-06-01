@@ -1,0 +1,133 @@
+20/07/2017
+Paolo
+-Player owned port crew is now almost done (only need to to the level system)
+-slayer shop fixed the reassing option (you now can only reassing if you have a task)
+-final boss check added in player.java (atleast 2000 boss kills  + you need 100 kills in everyboss)
+-interface for house styles done (players can now change their housestyle (still buggy))
+- Rise of the six 
+ 	*Party system done
+
+Hassan
+- Barbarian fishing will now be prioritized over harpoon fishing when fishing Shark, Swordfish and Tuna. If a player wants to fish with a harpoon, they must bring another one in the inventory.
+- Fixed a random null point when killing an npc, the game would think you were in fight caves
+
+21/07/2017
+Paolo	
+-bonus exp config found and added (todo make check) ~DONE[HASSAN]
+-Started on pendants
+
+Hassan
+- Started on a new 'gambling game'; "GuessTheCode"
+- GuessTheCode done
+  *TODO ASSIGN TO A NPC
+- The config 2044 (Bonus EXP) will now only appear if you are receiving more xp than usual
+
+22/07/2017
+Hassan
+- Started on reworking brawling gloves
+Paolo
+- fixed a bugg which cause amulets not showing when equipped
+- Pendants
+   *picking which skill you would like to transform it
+   *Exp calc
+   *pendant removing after exp is 0
+   *added to sof
+-fixed another null point when killing npcs (senddrop null check for killer because npcs can kill npcs aswell)
+-Godwars updates
+  *Npcs from different factions now attack eachother
+  *Players won't get attack if they wear an Item of that faction( nex armor counts for everything)
+  *TODO fix npc animations
+-fixed sof bug where stackable items only gave less than 10( example less than 10 protean bars)
+-removed sof rewards from settings.java
+-made quickspin option (buy spins button) trying to change the button soon :p
+-fixed sof bug where certain items didn't bank 
+
+23/07/2017
+Hassan
+- Brawling gloves done
+- Tested and fixed for any bugs
+- Perfected a formula for config 2044 (bonus XP config), before it glitched with items that were below 100%
+Paolo
+- Added Item dialogue option (quick item dialogue = SimpleItemMessage : params : Item + message)
+- fixed pendant message showing every time.
+- started on herblore habitat
+  -Farming
+	-Fruit tree patch added
+	
+  -hunter
+    -added plant trap
+    -jadinko's added to hunterNpc enum
+-rewrote the hunter enums partly (were just int arrays with values , idk who did it but bad af)
+24/07/2017
+Paolo
+-started on herblore habitat farm patches
+-climable vines done (need to find better climb emote)
+26/07
+PAOLO
+-draconic are now only for donators
+-fixed bug where jadinko's didn't walk
+-jungle trees can now be cutted
+-fixed bug where players would get 2 logs instead of 1
+27/07
+PAOLO
+-wishing well patch added
+-donators now start at wave 30 of fight caves and 11 in fight kiln
+-jadinko's now have a chance of dropiing wishing well seeds
+-fixed sof coin amount
+-SOF: removed world message for lamps
+-removed like 20+ useless construction files, idk what they were doing there but was an old and bad written system.
+- added donator info panel
+- donators now get extra spins
+-increased quick teleports to 10
+28/07
+PAOLO
+-Artisan workshop rewards added (cannon upgrade + auto refill)
+29/07
+PAOLO
+-complete new achievement system (easy to use 100x better than my previous which i deleted )
+30/07
+PAOLO
+-added a lot of new achievements
+-added a quick-offer option to the prayer altar
+-Added quick cook added (campfire at home)
+1/08
+PAOLO
+-donators can now toggle their  icon
+-donator can change their own spawn tile
+3/08
+PAOLO
+-when you receiving rare loot from an lootbox it will be counted in the global counter
+4/08
+-fixed bug with master cape dialogue
+-strarted on master cape emotes
+5/08
+PAOLO
+-ice wolf animations and drops added
+-fixed bug with quick cooking
+-sarted on kalphite king combat
+-kalphite king can now be instanced
+-cleaned out interfacemanager
+-cleaned player examine, now also displays in another tab
+-instances should look better now
+-gargoyle combat finished
+-players can now unlock rock hammer addinng 2 toolbelt
+-added some objects to the donator zone
+-added donator hunter spot + celestial dragons for them
+-pool of restoration added in the donator zone
+-added vine whip special attack
+07/08
+PAOLO
+-added key finder perk
+-added more achievements
+11/08
+-tris keys added
+-added expert cape and reqs
+-added slayer tasks for combat > 50 && < 100
+-added more oldschool looks
+-added add to toolbelt option to the rockhammer
+13/08
+-added dung map icon
+-rewrote gano crafting
+-added new achievements
+-fixed dung entrance interfaces partly
+-fixed dung invite tab

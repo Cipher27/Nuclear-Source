@@ -1,0 +1,1520 @@
+//Star sprite spawned by paolo
+8091 - 2384 3648 0
+//Spirit cockatrice spawned by paolo
+20617 - 3505 6164 0
+//Lesser demon deacon spawned by paolo
+20615 - 3504 6165 0
+//Lesser demon executioner spawned by paolo
+20614 - 3504 6165 0
+//General Graardor spawned by paolo
+6260 - 2222 3300 1
+//Banker spawned by thomas
+4456 - 2324 3734 0
+//Banker spawned by thomas
+4458 - 2323 3735 0
+//Banker spawned by thomas
+15839 - 2326 3725 0
+//Banker spawned by thomas
+15840 - 2325 3725 0
+//Banker spawned by thomas
+15841 - 2324 3725 0
+//Banker spawned by thomas
+15842 - 2323 3725 0
+//Banker spawned by thomas
+4456 - 2322 3732 0
+//Banker spawned by thomas
+4457 - 2321 3732 0
+//Banker spawned by thomas
+4458 - 2320 3732 0
+//Banker spawned by thomas
+4459 - 2319 3732 0
+//Banker spawned by thomas
+3418 - 2318 3732 0
+//Banker spawned by thomas
+3416 - 2317 3732 0
+//Banker spawned by thomas
+3293 - 2316 3732 0
+//Banker spawned by thomas
+3199 - 2315 3732 0
+//Ogre spawned by paolo
+115 - 2503 3114 0
+//Ogre spawned by paolo
+374 - 2505 3111 0
+//Ogre guard spawned by paolo
+857 - 2505 3108 0
+//Ogre spawned by paolo
+374 - 2507 3108 0
+//Ogre spawned by paolo
+374 - 2509 3100 0
+//Ogre spawned by paolo
+374 - 2516 3101 0
+//Ogre spawned by paolo
+374 - 2508 3109 0
+//Ogre spawned by paolo
+374 - 2508 3103 0
+//Ogre spawned by paolo
+374 - 2503 3099 0
+//Ogre spawned by paolo
+374 - 2498 3095 0
+//Ogre spawned by paolo
+374 - 2502 3092 0
+//Ogre spawned by paolo
+374 - 2502 3095 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Ogre spawned by paolo
+374 - 2505 3116 0
+//Man spawned by paolo
+1 - 2339 3685 0
+//Man spawned by paolo
+1 - 2337 3684 0
+//Man spawned by paolo
+1 - 2342 3684 0
+//Agrith Naar spawned by thomas
+14502 - 3041 9833 0
+//Man spawned by paolo
+1 - 2333 3690 0
+//Cockroach worker spawned by paolo
+7159 - 1604 4507 0
+//Cockroach worker spawned by thomas
+7159 - 2347 3709 0
+//Cockroach worker spawned by thomas
+7159 - 2349 3712 0
+//Cockroach worker spawned by thomas
+7159 - 2342 3698 1
+//Cockroach worker spawned by thomas
+7159 - 2340 3697 1
+//Cockroach worker spawned by thomas
+7159 - 2343 3694 1
+//Cockroach worker spawned by thomas
+7159 - 2348 3692 1
+//Cockroach worker spawned by thomas
+7159 - 2350 3686 1
+//Cockroach worker spawned by thomas
+7159 - 2344 3685 1
+//Cockroach worker spawned by thomas
+7159 - 2339 3685 1
+//Cockroach worker spawned by thomas
+7159 - 2343 3691 1
+//Cockroach worker spawned by thomas
+7159 - 2346 3689 1
+//Cockroach worker spawned by thomas
+7159 - 2336 3715 0
+//Man spawned by thomas
+1 - 2340 3699 1
+//Cockroach worker spawned by thomas
+7159 - 2337 3712 0
+//Banker spawned by thomas
+4459 - 2329 3730 0
+//Banker spawned by thomas
+4458 - 2328 3730 0
+//Banker spawned by thomas
+4458 - 2327 3730 0
+//Banker spawned by thomas
+4458 - 2328 3730 0
+//Banker spawned by thomas
+4457 - 2327 3730 0
+//Banker spawned by thomas
+4456 - 2326 3730 0
+//General Graardor spawned by paolo
+6260 - 2332 3679 0
+//General Graardor spawned by paolo
+6260 - 2332 3682 0
+//Blink spawned by paolo
+12878 - 2330 3680 0
+//Rocktail shoal spawned by thomas
+8842 - 1826 5841 0
+//Rocktail shoal spawned by thomas
+8842 - 1821 5848 0
+//Rocktail shoal spawned by thomas
+8842 - 1820 5847 0
+//Rocktail shoal spawned by thomas
+8842 - 1819 5847 0
+//Rocktail shoal spawned by thomas
+8842 - 1819 5847 0
+//Rocktail shoal spawned by thomas
+8842 - 1819 5847 0
+//Rocktail shoal spawned by thomas
+8842 - 1819 5847 0
+//Rocktail shoal spawned by thomas
+8842 - 1819 5847 0
+//Man spawned by thomas
+1 - 2337 3708 0
+//Man spawned by thomas
+1 - 2339 3709 0
+//Nymora, the Vengeful spawned by thomas
+22454 - 2345 3725 0
+//The dark Lord spawned by thomas
+19553 - 2369 3715 0
+//Magic training dummy spawned by thomas
+16713 - 2386 3698 0
+//Party Demon spawned by thomas
+15581 - 2391 3690 0
+//Fremennik shipmaster spawned by thomas
+14847 - 2437 3681 0
+//Nex spawned by thomas
+13450 - 2438 3678 0
+//Pest Queen spawned by thomas
+6358 - 2439 3657 0
+//Void Knight spawned by thomas
+3782 - 2437 3643 0
+//Jogre Champion spawned by thomas
+3063 - 2436 3639 0
+//Jogre Champion spawned by thomas
+3063 - 2434 3633 0
+//Jogre Champion spawned by thomas
+3063 - 2433 3630 0
+//Jogre Champion spawned by thomas
+3063 - 2344 3707 0
+//Jogre Champion spawned by thomas
+3063 - 2347 3708 0
+//Papa Mambo spawned by thomas
+3122 - 2965 2885 0
+//Leprechaun spawned by thomas
+418 - 2969 2882 0
+//Leprechaun spawned by thomas
+419 - 2977 2876 0
+//Tool leprechaun spawned by thomas
+3021 - 2975 2872 0
+//Tool leprechaun spawned by thomas
+3121 - 2976 2868 0
+//Leprechaun spawned by thomas
+13655 - 2975 2868 0
+//Leprechaun Champion spawned by thomas
+8993 - 2971 2866 0
+//Goth leprechaun spawned by thomas
+8000 - 2966 2864 0
+//Tool leprechaun spawned by thomas
+7569 - 2965 2864 0
+//Lucy spawned by thomas
+19301 - 2153 5530 3
+//Lucy spawned by thomas
+19301 - 2153 5530 3
+//Lucy spawned by thomas
+19301 - 2149 5530 3
+//Lucy spawned by thomas
+19301 - 2153 5530 3
+//Penguin spawned by thomas
+9234 - 2152 5529 3
+//Penguin spawned by thomas
+5445 - 2152 5531 3
+//Ogress banker spawned by thomas
+7050 - 2324 3732 0
+//Banker spawned by thomas
+6200 - 2320 3735 0
+//Fremennik banker spawned by thomas
+9710 - 2318 3737 0
+//Sirsal Banker spawned by thomas
+4519 - 2320 3744 0
+//"Banker" spawned by thomas
+17765 - 2323 3743 0
+//Gnome banker spawned by thomas
+16604 - 2323 3742 0
+//Gnome banker spawned by thomas
+16604 - 2345 3745 0
+//Gnome banker spawned by thomas
+16602 - 2154 5513 3
+//Gnome banker spawned by thomas
+16603 - 2155 5513 3
+//Gnome banker spawned by thomas
+16604 - 2156 5513 3
+//null spawned by thomas
+16605 - 2157 5513 3
+//Snow mage spawned by thomas
+16601 - 2157 5514 3
+//Gnome banker spawned by thomas
+16603 - 2151 5524 3
+//Gnome banker spawned by thomas
+16602 - 2150 5524 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5537 3
+//Jogre Champion spawned by thomas
+3063 - 2137 5537 3
+//Jogre Champion spawned by thomas
+3063 - 2137 5536 3
+//Jogre Champion spawned by thomas
+3063 - 2137 5537 3
+//Jogre Champion spawned by thomas
+3063 - 2137 5535 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5537 3
+//Ice demon spawned by thomas
+20429 - 2156 5522 3
+//Fishing spot spawned by thomas
+14907 - 3282 2640 0
+//Fishing spot spawned by thomas
+14907 - 2153 5539 3
+//Leprechaun spawned by thomas
+418 - 2144 5535 3
+//Leprechaun spawned by thomas
+419 - 2144 5534 3
+//Leprechaun spawned by thomas
+418 - 2149 5531 3
+//Leprechaun spawned by thomas
+418 - 2149 5532 3
+//Leprechaun spawned by thomas
+418 - 2150 5530 3
+//Leprechaun spawned by thomas
+418 - 2153 5530 3
+//Sylas spawned by thomas
+5987 - 2147 5530 3
+//Leprechaun spawned by thomas
+418 - 2147 5529 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5538 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5538 3
+//Jogre Champion spawned by thomas
+3063 - 2137 5536 3
+//Jogre Champion spawned by thomas
+3063 - 2137 5538 3
+//Jogre Champion spawned by thomas
+3063 - 2137 5537 3
+//Jogre Champion spawned by thomas
+3063 - 2137 5539 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5536 3
+//Jogre Champion spawned by thomas
+3063 - 2138 5539 3
+//Jogre Champion spawned by thomas
+3063 - 2135 5537 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5538 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5537 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5537 3
+//Jogre Champion spawned by thomas
+3063 - 2136 5537 3
+//Kalphite King spawned by thomas
+16699 - 2136 5537 3
+//Kalphite King spawned by thomas
+16699 - 2135 5535 3
+//Kalphite King spawned by thomas
+16699 - 2134 5535 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5535 3
+//Kalphite King spawned by thomas
+16699 - 2133 5535 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5533 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5535 3
+//Kalphite King spawned by thomas
+16699 - 2133 5535 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5533 3
+//Kalphite King spawned by thomas
+16699 - 2135 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5534 3
+//Kalphite King spawned by thomas
+16699 - 2133 5533 3
+//Kalphite King spawned by thomas
+16699 - 2134 5532 3
+//Kalphite King spawned by thomas
+16699 - 2133 5535 3
+//Kalphite King spawned by thomas
+16699 - 2133 5535 3
+//Ellis spawned by thomas
+2824 - 2342 3678 0
+//Horvik spawned by thomas
+549 - 2336 3727 0
+//Cyclops spawned by thomas
+4291 - 2857 2586 0
+//Cyclops spawned by thomas
+4291 - 2857 2586 0
+//Cyclops spawned by thomas
+4291 - 2857 2586 0
+//Cyclops spawned by thomas
+4291 - 2857 2586 0
+//Cyclops spawned by thomas
+4291 - 2857 2586 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2583 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2860 2584 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2857 2588 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2816 3561 0
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2842 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2843 3535 2
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2817 3560 0
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3537 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2843 3536 2
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2816 3560 0
+//Cyclops spawned by thomas
+4291 - 2824 3555 0
+//Cyclops spawned by thomas
+4291 - 2824 3555 0
+//Cyclops spawned by thomas
+4291 - 2824 3555 0
+//Cyclops spawned by thomas
+4291 - 2824 3555 0
+//Cyclops spawned by thomas
+4291 - 2824 3555 0
+//Cyclops spawned by thomas
+4291 - 2824 3555 0
+//Cyclops spawned by thomas
+4291 - 2824 3555 0
+//Cyclops spawned by thomas
+4291 - 2824 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2823 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2825 3555 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2830 3552 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Cyclops spawned by thomas
+4291 - 2843 3555 0
+//Leprechaun spawned by thomas
+418 - 2896 3526 3
+//Cyclops spawned by thomas
+4291 - 2872 3536 3
+//Cyclops spawned by thomas
+4291 - 2866 3536 3
+//Cyclops spawned by thomas
+4291 - 2870 3541 3
+//Cyclops spawned by thomas
+4291 - 2873 3546 3
+//Cyclops spawned by thomas
+4291 - 2868 3547 3
+//Cyclops spawned by thomas
+4291 - 2865 3543 3
+//Cyclops spawned by thomas
+4291 - 2861 3539 3
+//Cyclops spawned by thomas
+4291 - 2856 3537 3
+//Cyclops spawned by thomas
+4291 - 2853 3540 3
+//Cyclops spawned by thomas
+4291 - 2853 3535 3
+//Cyclops spawned by thomas
+4291 - 2854 3544 3
+//Cyclops spawned by thomas
+4291 - 2858 3547 3
+//Cyclops spawned by thomas
+4291 - 2857 3545 3
+//Cyclops spawned by thomas
+4291 - 2865 3546 3
+//Cyclops spawned by thomas
+4291 - 2864 3542 3
+//Cyclops spawned by thomas
+4291 - 2858 3543 3
+//Cyclops spawned by thomas
+4291 - 2852 3547 3
+//Leprechaun spawned by thomas
+418 - 2896 3549 3
+//Common jadinko spawned by thomas
+13119 - 2378 3667 0
+//Horvik spawned by thomas
+549 - 2331 3729 0
+//Bloodveld spawned by thomas
+1618 - 3409 3543 1
+//Bloodveld spawned by thomas
+1618 - 3409 3549 1
+//Bloodveld spawned by thomas
+1618 - 3407 3544 1
+//Nechryael spawned by thomas
+10702 - 3409 3570 2
+//Nechryael spawned by thomas
+10702 - 3405 3571 2
+//Nechryael spawned by thomas
+10702 - 3402 3568 2
+//Nechryael spawned by thomas
+10702 - 3410 3564 2
+//Blink spawned by paolo
+12878 - 3212 3386 0
+//Blink spawned by paolo
+12878 - 3211 3387 0
+//Blink spawned by paolo
+12878 - 3212 3387 0
+//Blink spawned by paolo
+12878 - 3212 3387 0
+//Blink spawned by paolo
+12878 - 3212 3389 0
+//General Graardor spawned by paolo
+6260 - 2342 3693 0
+//Slash Bash spawned by paolo
+2060 - 2344 3690 0
+//Skeletal minion spawned by paolo
+11722 - 3466 3731 0
+//Necrolord spawned by paolo
+11751 - 3465 3730 0
+//Ice troll runt spawned by paolo
+5521 - 3448 3694 0
+//Ice troll runt spawned by thomas
+5525 - 2336 3872 0
+//Ice troll male spawned by thomas
+5522 - 2297 3872 0
+//Ice troll female spawned by thomas
+5527 - 2293 3868 0
+//Ice troll runt spawned by thomas
+5473 - 2289 3867 0
+//Ice troll male spawned by thomas
+5474 - 2286 3866 0
+//Ice troll female spawned by thomas
+5475 - 2284 3866 0
+//null spawned by thomas
+-1 - 2284 3862 0
+//null spawned by paolo
+14970 - 2345 3690 0
+//null spawned by paolo
+14969 - 2345 3689 0
+//Man spawned by paolo
+1 - 2343 3691 0
+//Rockslug spawned by thomas
+1631 - 2335 3726 0
+//Trefaji spawned by thomas
+1431 - 2337 3726 0
+//Bandosian wild mage spawned by paolo
+17078 - 3037 3594 0
+//Charming Imp spawned by paolo
+17082 - 3037 3595 0
+//Bandosian hunter spawned by paolo
+17080 - 3040 3595 0
+//Armadylean shaman spawned by paolo
+17074 - 3038 3594 0
+//Armadylean archon spawned by paolo
+17077 - 3039 3594 0
+//Iron dragon spawned by paolo
+10781 - 3042 3595 0
+//Bandosian warlord spawned by paolo
+17081 - 3042 3595 0
+//Iron dragon spawned by paolo
+10781 - 3050 3592 0
+//Bandosian warlord spawned by paolo
+17081 - 3050 3592 0
+//Charming Imp spawned by paolo
+17082 - 3050 3592 0
+//Charming Imp spawned by paolo
+17082 - 3049 3592 0
+//Saradominist thaumaturge spawned by paolo
+17066 - 3048 3594 0
+//Quercus spawned by paolo
+17065 - 3138 3520 0
+//Quercus spawned by paolo
+17065 - 3135 3521 0
+//Quercus spawned by paolo
+17065 - 3134 3519 0
+//General Graardor spawned by paolo
+6260 - 2782 3584 0
+//Animated Iron Armour spawned by paolo
+4279 - 2143 5528 3
+//Man spawned by paolo
+1 - 74 92 1
+//Man spawned by paolo
+1 - 2332 3679 0
+//General Graardor spawned by paolo
+6260 - 2331 3677 0
+//Araxxi spawned by paolo
+19464 - 76 90 1
+//Man spawned by paolo
+1 - 167 82 1
+//Man spawned by paolo
+1 - 160 88 1
+//<col=00ffff>Vorago</col> spawned by paolo
+17162 - 2711 5349 0
+//<col=00ffff>Vorago</col> spawned by paolo
+17162 - 3042 6125 0
+//Vorago spawned by paolo
+17161 - 3040 6127 0
+//Vorago spawned by paolo
+17161 - 98 236 0
+//Vorago spawned by paolo
+17161 - 100 234 0
+//Vorago spawned by paolo
+17161 - 95 233 0
+//Vorago spawned by paolo
+17161 - 99 212 0
+//Vorago spawned by paolo
+17161 - 98 243 0
+//Vorago spawned by paolo
+17161 - 96 241 0
+//Vorago spawned by paolo
+17161 - 93 242 0
+//Vorago spawned by paolo
+17161 - 93 241 0
+//Vorago spawned by paolo
+17161 - 99 212 0
+//Vorago spawned by paolo
+17161 - 99 212 0
+//Vorago spawned by paolo
+17161 - 99 212 0
+//Vorago spawned by paolo
+17161 - 99 468 0
+//Thorvar Crittersmash spawned by paolo
+17163 - 99 212 0
+//Vorago spawned by paolo
+17161 - 99 212 0
+//Vorago spawned by paolo
+17161 - 99 212 0
+//Vorago spawned by paolo
+17161 - 99 212 0
+//Vorago spawned by paolo
+17161 - 3045 6124 0
+//Vorago spawned by paolo
+17161 - 92 234 0
+//Vorago spawned by paolo
+17161 - 99 212 0
+//Mirrorback spider spawned by paolo
+19468 - 230 84 1
+//Man spawned by paolo
+1 - 173 83 1
+//Solomon spawned by paolo
+18808 - 3698 3419 0
+//The Everlasting spawned by paolo
+14541 - 2333 3697 0
+//Brass Hand Harry spawned by paolo
+7857 - 2347 3694 0
+//Office penguin spawned by paolo
+7587 - 3699 3419 0
+//Brass Hand Harry spawned by paolo
+7857 - 2344 3690 0
+//Brass Hand Harry spawned by paolo
+7857 - 3699 3419 0
+//Brass Hand Harry spawned by paolo
+7857 - 3699 3419 0
+//Brass Hand Harry spawned by paolo
+7857 - 3699 3419 0
+//Brass Hand Harry spawned by paolo
+7857 - 3699 3419 0
+//Brass Hand Harry spawned by paolo
+7857 - 3698 3419 0
+//Brass Hand Harry spawned by paolo
+7857 - 3696 3419 0
+//Brass Hand Harry spawned by paolo
+7857 - 3698 3418 0
+//Brass Hand Harry spawned by paolo
+7857 - 3699 3419 0
+//Man spawned by paolo
+1 - 3696 3419 0
+//Man spawned by paolo
+1 - 3692 3418 0
+//Man spawned by paolo
+1 - 3697 3419 0
+//Man spawned by paolo
+1 - 3697 3419 0
+//Man spawned by paolo
+1 - 3699 3419 0
+//Man spawned by paolo
+1 - 3699 3419 0
+//Man spawned by paolo
+1 - 3695 3419 0
+//Man spawned by paolo
+1 - 3699 3419 0
+//Woman spawned by paolo
+5 - 3694 3420 0
+//Man spawned by paolo
+1 - 3699 3419 0
+//General Graardor spawned by paolo
+6260 - 3695 3421 0
+//Man spawned by paolo
+1 - 3699 3419 0
+//General Graardor spawned by paolo
+6260 - 3696 3420 0
+//Man spawned by paolo
+1 - 3697 3419 0
+//Man spawned by paolo
+1 - 3695 3420 0
+//Man spawned by paolo
+1 - 3695 3419 0
+//General Graardor spawned by paolo
+6260 - 3696 3419 0
+//Man spawned by paolo
+1 - 3693 3419 0
+//Man spawned by paolo
+1 - 3693 3420 0
+//Man spawned by paolo
+1 - 3693 3422 0
+//Man spawned by paolo
+1 - 3693 3421 0
+//Catatonic child spawned by paolo
+21753 - 1558 6627 0
+//Harvey spawned by paolo
+895 - 2339 3669 0
+//Estate agent spawned by paolo
+4247 - 2338 3669 0
+//Estate agent spawned by paolo
+4247 - 2338 3668 0
+//Estate agent spawned by paolo
+4247 - 2340 3670 0
+//Edimmu spawned by conor
+10704 - 1371 4653 0
+//Green orb spawned by conor
+8027 - 1371 4652 0
+//Wizard Acantha spawned by conor
+8031 - 1372 4652 0
+//Star sprite spawned by conor
+8091 - 1372 4651 0
+//Vindicta spawned by conor
+22320 - 2342 3696 0
+//Vindicta spawned by conor
+22321 - 2335 3698 0
+//Gorvek and Vindicta spawned by conor
+22322 - 2326 3697 0
+//Edimmu spawned by conor
+20290 - 2325 3697 0
+//Vindicta spawned by conor
+22320 - 3096 6878 1
+//Vindicta spawned by conor
+22321 - 3094 6886 1
+//Edimmu spawned by conor
+20291 - 1369 4641 0
+//Edimmu spawned by conor
+20290 - 1365 4640 0
+//Vindicta spawned by conor
+22320 - 1367 4642 0
+//Sinister figure spawned by conor
+23320 - 2343 3695 0
+//Vindicta spawned by conor
+22320 - 2341 3697 0
+//Vindicta spawned by conor
+22320 - 2339 3697 0
+//Vindicta spawned by conor
+22320 - 2343 3695 0
+//Vindicta spawned by conor
+22320 - 2341 3698 0
+//Vindicta spawned by conor
+22320 - 2337 3699 0
+//Vindicta spawned by conor
+22320 - 2336 3699 0
+//Vindicta spawned by conor
+22320 - 2336 3699 0
+//Vindicta spawned by conor
+22320 - 2335 3700 0
+//Vindicta spawned by conor
+22320 - 2334 3700 0
+//Vindicta spawned by conor
+22320 - 2332 3698 0
+//Vindicta spawned by conor
+22320 - 2331 3698 0
+//Vindicta spawned by conor
+22320 - 3098 6880 1
+//Vindicta spawned by conor
+22320 - 3096 6883 1
+//Vindicta spawned by conor
+22320 - 3097 6879 1
+//null spawned by conor
+22230 - 3096 6876 1
+//Vindicta spawned by conor
+22320 - 3096 6878 1
+//Vindicta spawned by conor
+22320 - 3099 6883 1
+//Vindicta spawned by conor
+22320 - 3099 6882 1
+//Vindicta spawned by conor
+22320 - 3102 6884 1
+//Vindicta spawned by conor
+22320 - 3101 6880 1
+//Vindicta spawned by conor
+22320 - 3101 6879 1
+//Vindicta spawned by conor
+22320 - 3098 6878 1
+//null spawned by conor
+40000 - 3102 6878 1
+//null spawned by conor
+-1 - 3103 6879 1
+//null spawned by conor
+90000 - 3101 6880 1
+//null spawned by conor
+200000 - 3099 6881 1
+//null spawned by conor
+400000 - 3098 6885 1
+//null spawned by conor
+1000000 - 3096 6887 1
+//null spawned by conor
+1000000000 - 3093 6889 1
+//Vindicta spawned by shawn
+22320 - 1633 6177 0
+//Vindicta spawned by conor
+22320 - 3105 6884 1
+//Vindicta spawned by conor
+22320 - 2337 3696 0
+//Vindicta spawned by conor
+22320 - 2334 3699 0
+//Vindicta spawned by conor
+22320 - 3102 6880 1
+//Vindicta spawned by conor
+22320 - 3104 6880 1
+//Vindicta spawned by shawn
+22320 - 3102 6883 1
+//Vindicta spawned by conor
+22320 - 3099 6882 1
+//Vindicta spawned by conor
+22320 - 3099 6875 1
+//null spawned by shawn
+43424 - 3554 5729 0
+//null spawned by shawn
+3549 - 3549 5728 0
+//Undead Lumberjack spawned by shawn
+5726 - 3548 5728 0
+//Vindicta spawned by conor
+22320 - 3100 6876 1
+//Vindicta spawned by conor
+22320 - 3099 6874 1
+//Vindicta spawned by conor
+22320 - 3100 6881 1
+//Vindicta spawned by conor
+22320 - 3097 6877 1
+//Vindicta spawned by conor
+22320 - 3096 6879 1
+//Vindicta spawned by conor
+22320 - 3100 6875 1
+//Vindicta spawned by conor
+22320 - 3099 6885 1
+//Vindicta spawned by conor
+22320 - 3101 6882 1
+//Vindicta spawned by conor
+22320 - 3102 6869 1
+//Vindicta spawned by conor
+22320 - 3099 6876 1
+//Vindicta spawned by conor
+22320 - 3099 6875 1
+//Vindicta spawned by conor
+22320 - 3098 6875 1
+//Vindicta spawned by conor
+22320 - 3100 6876 1
+//Vindicta spawned by conor
+22320 - 3100 6878 1
+//Vindicta spawned by conor
+22320 - 3097 6878 1
+//Vindicta spawned by conor
+22320 - 3100 6875 1
+//Vindicta spawned by conor
+22320 - 3103 6884 1
+//Vindicta spawned by conor
+22320 - 3102 6881 1
+//Vindicta spawned by conor
+22320 - 3099 6873 1
+//Man spawned by shawn
+1 - 4191 6240 0
+//Vindicta spawned by conor
+22320 - 3099 6877 1
+//Vindicta spawned by conor
+22320 - 3101 6876 1
+//Vindicta spawned by conor
+22320 - 3097 6875 1
+//Vindicta spawned by conor
+22320 - 3097 6880 1
+//Vindicta spawned by conor
+22320 - 3096 6873 1
+//Vindicta spawned by conor
+22320 - 3099 6879 1
+//Vindicta spawned by conor
+22320 - 3100 6884 1
+//Vindicta spawned by conor
+22320 - 3099 6877 1
+//Vindicta spawned by conor
+22320 - 3101 6876 1
+//null spawned by shawn
+25506 - 3093 6883 1
+//Vindicta spawned by conor
+22320 - 3098 6880 1
+//Vindicta spawned by conor
+22320 - 3099 6879 1
+//General Graardor spawned by conor
+18471 - 2917 5345 0
+//General Graardor spawned by conor
+6260 - 2915 5345 0
+//Alaea crablet spawned by shawn
+22992 - 913 6993 0
+//Salty crablet spawned by shawn
+22990 - 913 6994 0
+//Idol crablet spawned by shawn
+22994 - 913 6994 0
+//Alaea crablet spawned by shawn
+22992 - 914 6993 0
+//Idol crablet spawned by shawn
+22994 - 914 6993 0
+//Ornate tortle spawned by shawn
+22999 - 916 6998 0
+//Crablet spawned by shawn
+22988 - 915 6995 0
+//Salty crablet spawned by shawn
+22989 - 916 6994 0
+//Salty crablet spawned by shawn
+22990 - 916 6992 0
+//Alaea crablet spawned by shawn
+22991 - 914 6995 0
+//Alaea crablet spawned by shawn
+22992 - 915 6996 0
+//Idol crablet spawned by shawn
+22993 - 912 6993 0
+//Idol crablet spawned by shawn
+22994 - 912 6991 0

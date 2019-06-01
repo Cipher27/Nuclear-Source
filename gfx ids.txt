@@ -1,0 +1,20 @@
+GFX
+5050/5051/5052/5053- rainbow lootbeam
+3651 t/m 3658 - could be used as a lootbeam
+
+object  
+93043 --- elven city hall 
+
+color ids
+gold ore color id
+9147 : donker gold
+9178 licht goud
+
+item ids/
+29441 - Food bag
+29442 - Large food bag
+
+
+1627 4579 good czve for sea troll queen
+
+clan citadal. ill find id. but for here can gain 0.5% xp rate ontop of the current. make req to use the citadel
