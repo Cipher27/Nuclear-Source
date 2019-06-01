@@ -36,11 +36,14 @@ public class Vindicta extends NPC {
 	private int p1_attackCounter = 0;
 	private int lastUsedWall = -1;
 	private boolean fightStart = true;
+	private boolean isTransforming = false;
 	
 	public Vindicta(int id, WorldTile tile, int mapAreaNameHash,
 			boolean canBeAttackFromOutOfArea, boolean spawned) {
 		super(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea, spawned);
 		phaseNum = PHASE_ONE;
+		setNextAnimation(new Animation(28257));
+		setNextGraphics(new Graphics(6114));
 	}
 
 	@Override
@@ -68,15 +71,6 @@ public class Vindicta extends NPC {
 			}
 		}
 		return possibleTarget;
-	}
-
-	public void processNPC() {
-		super.processNPC();
-		if (phaseNum == 1 && getHitpoints() < 10000) {
-			phaseNum = PHASE_TWO;
-			setNextAnimation(new Animation(28263));
-			transformIntoNPC(22322);
-		}
 	}
 	
 	
@@ -111,17 +105,6 @@ public class Vindicta extends NPC {
 			}
 		}, 0, 1);
 	}
-
-	public void spawn() {
-		setFinished(false);
-		World.addNPC(this);
-		setLastRegionId(0);
-		World.updateEntityRegion(this);
-		loadMapRegions();
-		checkMultiArea();
-		setNextAnimation(new Animation(28257));
-		setNextGraphics(new Graphics(6114));
-	}
 	
 	@Override
 	public void setRespawnTask() {
@@ -153,11 +136,11 @@ public class Vindicta extends NPC {
 		return phaseNum;
 	}
 
-	public int getP1attackCounter() {
+	public int getAttackCounter() {
 		return p1_attackCounter;
 	}
 
-	public void setP1attackCounter(int p1_attackCounter) {
+	public void setAttackCounter(int p1_attackCounter) {
 		this.p1_attackCounter = p1_attackCounter;
 	}
 
@@ -175,5 +158,19 @@ public class Vindicta extends NPC {
 
 	public void setFightStart(boolean fightStart) {
 		this.fightStart = fightStart;
+	}
+
+	public void setPhase(int phaseTwo) {
+		// TODO Auto-generated method stub
+		phaseNum = phaseTwo;
+	}
+
+	public void isTransforming(boolean b) {
+		isTransforming  = b;
+	}
+
+	public boolean isTransforming() {
+		// TODO Auto-generated method stub
+		return isTransforming;
 	}
 }

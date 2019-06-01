@@ -22,6 +22,7 @@ import com.rs.game.npc.familiar.Steeltitan;
 import com.rs.game.npc.fightkiln.HarAken;
 import com.rs.game.npc.fightkiln.HarAkenTentacle;
 import com.rs.game.npc.glacor.Glacyte;
+import com.rs.game.npc.godwars.gielinor.Vindicta;
 import com.rs.game.npc.godwars.zaros.NexMinion;
 import com.rs.game.npc.qbd.QueenBlackDragon;
 import com.rs.game.player.CombatDefinitions;
@@ -118,6 +119,12 @@ public class PlayerCombat extends Action {
 			return 0;
 		if (!player.getControlerManager().keepCombating(target))
 			return -1;
+		if (target instanceof Vindicta) {
+			Vindicta v = (Vindicta) target;
+			if (v.isTransforming()) {
+				return -1;
+			}
+		}
 		addAttackedByDelay(player);
 		if (spellId > 0) {
 			boolean manualCast = spellId != 65535 && spellId >= 256;

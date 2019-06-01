@@ -1518,3 +1518,13 @@
 22993 - 912 6993 0
 //Idol crablet spawned by shawn
 22994 - 912 6991 0
+//Vindicta spawned by conor
+22320 - 3100 6885 1
+//Vindicta spawned by conor
+22320 - 3099 6884 1
+//Vindicta spawned by conor
+22320 - 3101 6883 1
+//Vindicta spawned by conor
+22320 - 3102 6872 1
+//Vindicta spawned by conor
+22320 - 3101 6873 1

@@ -32,21 +32,28 @@ public class VindictaCombat extends CombatScript {
 		for (Entity t : v.getPossibleTargets()) {
 			if (t.withinDistance(v.getTile(), 2)) {
 				int damage = r.nextInt(120);
-				delayHit(v, 2, t, getRegularHit(v, damage));
+				delayHit(v, 1, t, getRegularHit(v, damage));
 				damage = r.nextInt(120);
 				delayHit(v, 2, t, getRegularHit(v, damage));
 			}
 		}
-		v.setP1attackCounter(v.getP1attackCounter() + 1);
+		v.setAttackCounter(v.getAttackCounter() + 1);
 	}
 	
+	private void p2autoAttack(Vindicta v, Entity target, Random r) {
+		int[] anims = { v.getCombatDefinitions().getAttackEmote() }; //28258
+		v.setNextAnimation(new Animation(anims[r.nextInt(anims.length)]));
+		int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, target);
+		delayHit(v, 1, target, getMeleeHit(v, damage));
+		v.setAttackCounter(v.getAttackCounter() + 1);
+	}
 	
 	private void autoAttack(Vindicta v, Entity target, Random r) {
 		int[] anims = { v.getCombatDefinitions().getAttackEmote() }; //28258
 		v.setNextAnimation(new Animation(anims[r.nextInt(anims.length)]));
 		int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, target);
-		delayHit(v, 2, target, getMeleeHit(v, damage));
-		v.setP1attackCounter(v.getP1attackCounter() + 1);
+		delayHit(v, 1, target, getMeleeHit(v, damage));
+		v.setAttackCounter(v.getAttackCounter() + 1);
 	}
 	
 	private void meleeAndRangeAttack(Vindicta v, Entity target, Random r) {
@@ -55,13 +62,13 @@ public class VindictaCombat extends CombatScript {
 		for (Entity t : v.getPossibleTargets()) {
 			if (!t.withinDistance(v.getTile(), 2)) {
 				System.out.println("entity shot");
-				delayHit(v,1,t,getRangeHit(v,getRandomMaxHit(v, 380,NPCCombatDefinitions.RANGE, t)));
-				World.sendProjectile(v, t, 6115, 20, 0, 10, 10, 0, 0);
+				delayHit(v,1,t,getRangeHit(v, Utils.next(189, 395)));
+				World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
 			}
 		}
 		int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, target);
-		delayHit(v, 2, target, getMeleeHit(v, damage));
-		v.setP1attackCounter(v.getP1attackCounter() + 1);
+		delayHit(v, 1, target, getMeleeHit(v, damage));
+		v.setAttackCounter(v.getAttackCounter() + 1);
 	}
 	
 	@Override
@@ -69,30 +76,40 @@ public class VindictaCombat extends CombatScript {
 		final NPCCombatDefinitions defs = npc.getCombatDefinitions();
 		Random r = new Random();
 		Vindicta v = (Vindicta) npc;
+		
+		if (v.getPhase() == Vindicta.PHASE_ONE && v.getHitpoints() < 10000) {
+			v.setPhase(Vindicta.PHASE_TWO);
+			v.isTransforming(true);
+			v.setNextAnimation(new Animation(28263));
+			v.transformIntoNPC(22322);
+			v.isTransforming(false);
+			v.setAttackCounter(0);
+		}
+		
 		switch (v.getPhase()) {
 			case Vindicta.PHASE_ONE:
 				if (v.isFightStart()) {
-					System.out.println("is: " + v.getP1attackCounter());
+					System.out.println("is: " + v.getAttackCounter());
 					//if start of fight, 2 auto attacks and a hurricane.
-					if (v.getP1attackCounter() < 2 ) {
+					if (v.getAttackCounter() < 2 ) {
 						//2 auto attacks before spin
 						autoAttack(v, target, r);
-					} else if (v.getP1attackCounter() == 2) {
+					} else if (v.getAttackCounter() == 2) {
 						hurricaneAttack(v, r);
 						v.setFightStart(false);
-						v.setP1attackCounter(0);
+						v.setAttackCounter(0);
 					}
 				} else {
-					System.out.println("isnt: " + v.getP1attackCounter());
+					System.out.println("isnt: " + v.getAttackCounter());
 
 					//if not start of fight, 1 auto, 1 auto + range if not melee distance, 1 auto.
-					if (v.getP1attackCounter() <= 1 || v.getP1attackCounter() == 3 || (v.getP1attackCounter() >= 5 && v.getP1attackCounter() <=7))
+					if (v.getAttackCounter() < 1 || v.getAttackCounter() == 2 || (v.getAttackCounter() >= 4 && v.getAttackCounter() <=6))
 						//2 auto attacks before spin
 						autoAttack(v, target, r);
-					else if (v.getP1attackCounter() == 2)
+					else if (v.getAttackCounter() == 1)
 						//slam target, hit anyone else out of range
 						meleeAndRangeAttack(v, target, r);
-					else if (v.getP1attackCounter() == 4) {
+					else if (v.getAttackCounter() == 3) {
 						// dragon fire
 						
 						//28260
@@ -112,14 +129,17 @@ public class VindictaCombat extends CombatScript {
 						else if (luck < 100)
 							attemptDiagonalWalls(v, target);
 
-						v.setP1attackCounter(v.getP1attackCounter() + 1);
-					} else if (v.getP1attackCounter() == 8) {
+						v.setAttackCounter(v.getAttackCounter() + 1);
+					} else if (v.getAttackCounter() == 7) {
 						//spin attack
 						hurricaneAttack(v, r);
-						v.setP1attackCounter(0);
+						v.setAttackCounter(0);
 					}
-					break;
 			}
+				break;
+			case Vindicta.PHASE_TWO:
+				
+				break;
 		}
 
 		
@@ -315,9 +335,9 @@ public class VindictaCombat extends CombatScript {
 	private void spawnGorvek(Vindicta v, Entity target, int start_y) {
 	CoresManager.fastExecutor.schedule(new TimerTask() {
 		int loop = 0;
+		NPC gorvek = new NPC(22321, new WorldTile(target.getX(), 6894, target.getPlane()), 0, false);
 		@Override
 		public void run() {
-			NPC gorvek = new NPC(22321, new WorldTile(target.getX(), 6894, target.getPlane()), 0, false);
 			switch (v.getLastUsedWall()) {
 			case Vindicta.EAST_WEST:
 				if (target.getY() >= 6879) {
@@ -347,13 +367,16 @@ public class VindictaCombat extends CombatScript {
 			}
 
 			gorvek.spawn();
+			System.out.println("Gorvek spawned X: " + gorvek.getX() + ", Y: " + gorvek.getY() + ", Z: " + gorvek.getPlane());
 			if (loop == 0)	
 				gorvek.setNextAnimation(new Animation(28264));
-			else
+			else if (loop >= 10) {
 				cancel();
+				gorvek.finish();
+			}
 			loop++;
 			}
-		} , 0, 1);
+		} , 0, 333);
 	}
 	
 }
