@@ -1670,7 +1670,7 @@ public final class World {
 		else if (id >= 6254 && id <= 6259)
 			n = new GodwarsSaradominFaction(id, tile, mapAreaNameHash, canBeAttackFromOutOfArea, spawned);
 		else if (id == 22320) {
-			System.out.println("Vindy spawned");
+			System.out.println("Vindy spawned" + mapAreaNameHash);
 	    	n = new Vindicta(id, tile, mapAreaNameHash, true, spawned);
 		}
 	    else if (id >= 6229 && id <= 6246)
@@ -2652,6 +2652,10 @@ public final class World {
 																											// lair
 				|| (destX >= 4540 && destX <= 4799 && destY >= 5052 && destY <= 5183 && tile.getPlane() == 0) // thzaar
 																												// city
+				
+				//GWD2
+				|| (destX >= 3077 && destX <= 3323 && destY >= 6861 && destY <= 7094)
+				
 				|| (destX >= 1721 && destX <= 1791 && destY >= 5123 && destY <= 5249) // mole
 				|| (destX >= 3029 && destX <= 3374 && destY >= 3759 && destY <= 3903)// wild
 				|| (destX >= 2250 && destX <= 2280 && destY >= 4670 && destY <= 4720) 

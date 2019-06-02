@@ -1090,7 +1090,6 @@ public class NPC extends Entity implements Serializable {
 
 	public void drop() {
 		try {
-
 			Player killer1 = getMostDamageReceivedSourcePlayer();
 			final int size = getSize();
 			Drop[] drops = NPCDrops.getDrops(id);

@@ -2,6 +2,7 @@ package com.rs.game.npc.combat.impl;
 
 import java.util.Random;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.cores.CoresManager;
@@ -16,6 +17,9 @@ import com.rs.game.npc.NPC;
 import com.rs.game.npc.combat.CombatScript;
 import com.rs.game.npc.combat.NPCCombatDefinitions;
 import com.rs.game.npc.godwars.gielinor.Vindicta;
+import com.rs.game.player.Player;
+import com.rs.game.tasks.WorldTask;
+import com.rs.game.tasks.WorldTasksManager;
 import com.rs.utils.Utils;
 
 public class VindictaCombat extends CombatScript {
@@ -40,19 +44,45 @@ public class VindictaCombat extends CombatScript {
 		v.setAttackCounter(v.getAttackCounter() + 1);
 	}
 	
-	private void p2autoAttack(Vindicta v, Entity target, Random r) {
-		int[] anims = { v.getCombatDefinitions().getAttackEmote() }; //28258
+	private void autoRange(Vindicta v, Random r) {
+		int[] anims = { 28274 }; //28258
 		v.setNextAnimation(new Animation(anims[r.nextInt(anims.length)]));
-		int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, target);
-		delayHit(v, 1, target, getMeleeHit(v, damage));
-		v.setAttackCounter(v.getAttackCounter() + 1);
+		for (Entity t : v.getPossibleTargets()) {
+			System.out.println("entity shot");
+			if (t instanceof Player) {
+				Player p = (Player) t;
+				if (p.getPrayer().isRangeProtecting()) {
+					delayHit(v,1,t,getRangeHit(v, (int) (p.getRangePrayerMultiplier() * Utils.next(189, 395))));
+					World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
+				} else {
+					delayHit(v,1,t,getRangeHit(v, Utils.next(189, 395)));
+					World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
+				}
+			} else {
+				delayHit(v,1,t,getRangeHit(v, Utils.next(189, 395)));
+				World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
+			}
+		}
 	}
 	
 	private void autoAttack(Vindicta v, Entity target, Random r) {
 		int[] anims = { v.getCombatDefinitions().getAttackEmote() }; //28258
 		v.setNextAnimation(new Animation(anims[r.nextInt(anims.length)]));
-		int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, target);
-		delayHit(v, 1, target, getMeleeHit(v, damage));
+		Player p;
+		if (target instanceof Player) {
+			p = (Player) target;
+				if (p.getPrayer().isMeleeProtecting()) {
+					int damage = Utils.next(0, 300);
+					damage *= p.getMeleePrayerMultiplier();
+					delayHit(v, 1, target, getMeleeHit(v, damage));
+				} else {
+					int damage = getRandomMaxHit(v, 300, NPCCombatDefinitions.MELEE, target);
+					delayHit(v, 1, target, getMeleeHit(v, damage));
+				}
+		} else {
+			int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, target);
+			delayHit(v, 1, target, getMeleeHit(v, damage));
+		}
 		v.setAttackCounter(v.getAttackCounter() + 1);
 	}
 	
@@ -64,6 +94,11 @@ public class VindictaCombat extends CombatScript {
 				System.out.println("entity shot");
 				delayHit(v,1,t,getRangeHit(v, Utils.next(189, 395)));
 				World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
+			} else if (t.withinDistance(v.getTile(), 2) && !((Player)t).getUsername().equalsIgnoreCase(((Player)target).getUsername())) {
+				((Player)t).setNextGraphics(new Graphics(6109));
+				int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, t);
+				delayHit(v, 1, t, getMeleeHit(v, damage));
+				
 			}
 		}
 		int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, target);
@@ -80,8 +115,19 @@ public class VindictaCombat extends CombatScript {
 		if (v.getPhase() == Vindicta.PHASE_ONE && v.getHitpoints() < 10000) {
 			v.setPhase(Vindicta.PHASE_TWO);
 			v.isTransforming(true);
-			v.setNextAnimation(new Animation(28263));
-			v.transformIntoNPC(22322);
+			WorldTasksManager.schedule(new WorldTask() {
+				int loop = 0;
+				@Override
+				public void run() {
+					if (loop == 0) {
+						v.transformIntoNPC(22322);
+						v.setNextAnimation(new Animation(28263));
+					} else {
+						stop();
+					}
+					loop++;
+				}
+			}, 0, 0);
 			v.isTransforming(false);
 			v.setAttackCounter(0);
 		}
@@ -138,7 +184,16 @@ public class VindictaCombat extends CombatScript {
 			}
 				break;
 			case Vindicta.PHASE_TWO:
-				
+				if (v.getAttackCounter() == 0)  {
+					autoAttack(v, target, r);
+					v.setAttackCounter(1);
+				} else if (v.getAttackCounter() == 1) {
+					autoRange(v, r);
+					v.setAttackCounter(2);
+				} else {
+					// do a fire thang
+					v.setAttackCounter(0);
+				}
 				break;
 		}
 
@@ -333,50 +388,68 @@ public class VindictaCombat extends CombatScript {
 	}
 	
 	private void spawnGorvek(Vindicta v, Entity target, int start_y) {
-	CoresManager.fastExecutor.schedule(new TimerTask() {
+	WorldTasksManager.schedule(new WorldTask() {
 		int loop = 0;
-		NPC gorvek = new NPC(22321, new WorldTile(target.getX(), 6894, target.getPlane()), 0, false);
+		NPC gorvek;
 		@Override
 		public void run() {
-			switch (v.getLastUsedWall()) {
-			case Vindicta.EAST_WEST:
-				if (target.getY() >= 6879) {
-					gorvek.setDirection(0);
-					gorvek.getWorldTile().setWorldTile(target.getX(), 6864, target.getPlane());;
-				} else {
-					gorvek.setDirection(8192);
-					gorvek.getWorldTile().setWorldTile(target.getX(), 6864, target.getPlane());;
-				}
-				break;
-			case Vindicta.NORTH_SOUTH:
-				if (target.getY() >= 6879) {
-					gorvek.setDirection(0);
-					gorvek.getWorldTile().setWorldTile(target.getX(), 6864, target.getPlane());;
-				} else {
-					gorvek.setDirection(8192);
-					gorvek.getWorldTile().setWorldTile(target.getX(), 6864, target.getPlane());;
-				}
-				break;
-			case Vindicta.NW_TO_SE:
-				gorvek.setDirection(10240);
-				gorvek.getWorldTile().setWorldTile(Vindicta.ARENA_X_START, start_y, target.getPlane());;
-				break;
-			case Vindicta.SW_TO_NE:
-				gorvek.setDirection(6114);
-				break;
-			}
+			if (gorvek == null) {
+				switch (v.getLastUsedWall()) {
+				case Vindicta.EAST_WEST:
+					if (target.getX() <= 3099) {
+						gorvek = new NPC(22323 , new WorldTile (3088, target.getY()+2, target.getPlane()), 0, true);
+						gorvek.setDirection(12228);
+					} else {
+						gorvek = new NPC(22323 , new WorldTile (3112, target.getY()-2, target.getPlane()), 0, true);
+						gorvek.setDirection(4096);
+					}
+					break;
+				case Vindicta.NORTH_SOUTH:
+					if (target.getY() >= 6879) {
+						gorvek = new NPC(22323, new WorldTile(target.getX(), 6894, target.getPlane()), 0, true);
+						gorvek.setDirection(0);
+					} else {
+						gorvek = new NPC(22323 , new WorldTile (target.getX(), 6864, target.getPlane()), 0, true);
+						gorvek.setDirection(8192);
+					}
+					break;
+				case Vindicta.NW_TO_SE:
+					if (target.getX() < 3099) {
+						gorvek = new NPC(22323 , new WorldTile (Vindicta.ARENA_X_START, start_y, target.getPlane()), 0, true);
+						gorvek.setDirection(14336);
+					} else {
+						gorvek = new NPC(22323, new WorldTile(Vindicta.ARENA_X_END, start_y + 10, target.getPlane()), 0, true);
+						gorvek.setDirection(6114);
+					}
+					break;
+				case Vindicta.SW_TO_NE:
+					if (target.getX() <=3099) {
+						gorvek = new NPC(22323 , new WorldTile (Vindicta.ARENA_X_START, start_y, target.getPlane()), 0, true);
+						gorvek.setDirection(10240);
+					} else {
+						gorvek = new NPC(22323, new WorldTile(Vindicta.ARENA_X_END, start_y + 16, target.getPlane()), 0, true);
+						gorvek.setDirection(2048);
+					}
 
-			gorvek.spawn();
-			System.out.println("Gorvek spawned X: " + gorvek.getX() + ", Y: " + gorvek.getY() + ", Z: " + gorvek.getPlane());
-			if (loop == 0)	
+					break;
+				}
+				gorvek.spawn();
+				System.out.println("Gorvek spawned X: " + gorvek.getX() + ", Y: " + gorvek.getY() + ", Z: " + gorvek.getPlane());
+			}
+			if (loop == 0) {
 				gorvek.setNextAnimation(new Animation(28264));
-			else if (loop >= 10) {
-				cancel();
+				System.out.println("Anim sent");
+			} else {
 				gorvek.finish();
+				World.removeNPC(gorvek);
+				System.out.println("gorvek removed");
+				stop();
 			}
 			loop++;
-			}
-		} , 0, 333);
-	}
+
+		}
+			
+	}, 0, 1);
+}
 	
 }

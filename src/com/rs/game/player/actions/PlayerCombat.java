@@ -119,12 +119,6 @@ public class PlayerCombat extends Action {
 			return 0;
 		if (!player.getControlerManager().keepCombating(target))
 			return -1;
-		if (target instanceof Vindicta) {
-			Vindicta v = (Vindicta) target;
-			if (v.isTransforming()) {
-				return -1;
-			}
-		}
 		addAttackedByDelay(player);
 		if (spellId > 0) {
 			boolean manualCast = spellId != 65535 && spellId >= 256;

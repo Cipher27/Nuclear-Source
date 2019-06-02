@@ -30,3 +30,6 @@ data/characters*
 
 #logs
 data/logs*
+
+data/map/spawns.txt
+data/npc/spawns.txt

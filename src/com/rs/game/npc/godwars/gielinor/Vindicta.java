@@ -44,6 +44,7 @@ public class Vindicta extends NPC {
 		phaseNum = PHASE_ONE;
 		setNextAnimation(new Animation(28257));
 		setNextGraphics(new Graphics(6114));
+		setForceMultiArea(true);
 	}
 
 	@Override
@@ -60,6 +61,7 @@ public class Vindicta extends NPC {
 							|| player.hasFinished()
 							|| !player.isRunning()
 							|| !player.withinDistance(this, 64)
+							|| !(player.getX() >= 3077 && player.getX() <= 3323 && player.getY() >= 6861 && player.getY() <= 7094)
 							|| ((!isAtMultiArea() || !player.isAtMultiArea())
 									&& player.getAttackedBy() != this && player
 									.getAttackedByDelay() > System
@@ -82,7 +84,7 @@ public class Vindicta extends NPC {
 		final NPCCombatDefinitions defs = getCombatDefinitions();
 		phaseNum = PHASE_ONE;
 		p1_attackCounter = 0;
-		
+		fightStart = true;
 		resetWalkSteps();
 		getCombat().removeTarget();
 		setNextAnimation(null);
@@ -95,6 +97,7 @@ public class Vindicta extends NPC {
 					setNextAnimation(new Animation(defs.getDeathEmote()));
 				} else if (loop >= defs.getDeathDelay()) {
 					drop();
+					transformIntoNPC(22320);
 					reset();
 					setLocation(getRespawnTile());
 					finish();
@@ -111,25 +114,27 @@ public class Vindicta extends NPC {
 		if (!hasFinished()) {
 			reset();
 			setLocation(getRespawnTile());
+			setWorldTile(getRespawnTile());
 			finish();
 		}
-		final NPC npc = this;
+		NPC npc = this;
 		CoresManager.slowExecutor.schedule(new Runnable() {
 			@Override
 			public void run() {
+				//new Vindicta(22320, new WorldTile(getWorldTile()), 0, true, false);
 				setFinished(false);
 				World.addNPC(npc);
 				npc.setLastRegionId(0);
 				World.updateEntityRegion(npc);
 				loadMapRegions();
 				checkMultiArea();
-				GodWarsBosses.respawnBandosMinions();
+				npc.setNextAnimation(new Animation(28257));
+				npc.setNextGraphics(new Graphics(6114));
+				//GodWarsBosses.respawnBandosMinions();
 			}
-		}, getCombatDefinitions().getRespawnDelay() * 600,
+		}, 60 * 600,
 				TimeUnit.MILLISECONDS);
 	}
-
-	
 	
 	public int getPhase() {
 		// TODO Auto-generated method stub
