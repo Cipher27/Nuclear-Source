@@ -16,9 +16,9 @@ public class DiscordHandler {
 	 * launches the bot
 	 */
 	public static   void init(){
-		bot = new DiscordBot(DiscordSettings.build("MzU5MzM0MzAxMTU1OTgzMzYy.DKP4jA.j6vnKCVvQl40K-6l08uqfId4RKg"));
-		bot.run();
-		bot.registerCommandListener(new DiscordInputCommands(bot, ".")); 
+//		bot = new DiscordBot(DiscordSettings.build("MzU5MzM0MzAxMTU1OTgzMzYy.DKP4jA.j6vnKCVvQl40K-6l08uqfId4RKg"));
+//		bot.run();
+//		bot.registerCommandListener(new DiscordInputCommands(bot, ".")); 
 	}
 	/*
 	 * sends a message to the discord

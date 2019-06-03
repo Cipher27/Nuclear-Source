@@ -27,11 +27,10 @@ public class Vindicta extends NPC {
 
 	
 	final public static int PHASE_ONE = 0, PHASE_TWO = 1, PHASE_THREE = 2, PHASE_FOUR = 3;
-	final public static int NORTH_SOUTH = 0, EAST_WEST = 1, SW_TO_NE = 2, NW_TO_SE = 3;
-	public static final int ARENA_X_START = 3088;
-	public static final int ARENA_X_END = 3110;
-	public static final int ARENA_Y_START = 6866;
-	public static final int ARENA_Y_END = 6894;
+	final public static int NORTH_SOUTH = 0, EAST_WEST = 1, SW_TO_NE = 2, NW_TO_SE = 3, FORTY_FIVE_DEGREE = 4;
+	public static final int ARENA_X_START = 3088, ARENA_X_END = 3110, ARENA_Y_START = 6866, ARENA_Y_END = 6894;
+	public static final WorldTile[] P2_CORNERS = {new WorldTile(3090, 6866, 1), new WorldTile(3090, 6891, 1), new WorldTile(3107, 6891, 1), new WorldTile(3107, 6866, 1)};
+	public static final int P2_SW_CORNER_DIRECTION = 10240;
 	private int phaseNum;
 	private int p1_attackCounter = 0;
 	private int lastUsedWall = -1;
@@ -61,7 +60,7 @@ public class Vindicta extends NPC {
 							|| player.hasFinished()
 							|| !player.isRunning()
 							|| !player.withinDistance(this, 64)
-							|| !(player.getX() >= 3077 && player.getX() <= 3323 && player.getY() >= 6861 && player.getY() <= 7094)
+							|| !(player.getX() >= Vindicta.ARENA_X_START && player.getX() <= Vindicta.ARENA_X_END && player.getY() >= Vindicta.ARENA_Y_START && player.getY() <= Vindicta.ARENA_Y_END)
 							|| ((!isAtMultiArea() || !player.isAtMultiArea())
 									&& player.getAttackedBy() != this && player
 									.getAttackedByDelay() > System

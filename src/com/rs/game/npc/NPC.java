@@ -1328,21 +1328,20 @@ public class NPC extends Entity implements Serializable {
 								Drop[] possibleDrops = new Drop[drops.length];
 								int possibleDropsCount = 0;
 								for (Drop drop : drops) {
-									if (drop.getRate() == 100)
+									if (drop.getRate() == 100) {
 										sendDrop(killer, drop);
-									else {
-										double dropRate = 1.5;
-										if (killer.isDonator())
-											dropRate += 0.4;
-										if (killer.isLegendaryDonator())
-											dropRate += 0.4;
-										if (killer.isDivineDonator())
-											dropRate += 0.6;
-										if (killer.getPrestigeLevel() >= 1)
-											dropRate += killer.getPrestigeLevel() * 0.01;
-										if ((Utils.getRandomDouble(99) + 1) <= drop.getRate() * dropRate)
-											possibleDrops[possibleDropsCount++] = drop;
 									}
+									double dropRate = 1.5;
+									if (killer.isDonator())
+										dropRate += 0.4;
+									if (killer.isLegendaryDonator())
+										dropRate += 0.4;
+									if (killer.isDivineDonator())
+										dropRate += 0.6;
+									if (killer.getPrestigeLevel() >= 1)
+										dropRate += killer.getPrestigeLevel() * 0.01;
+									if ((Utils.getRandomDouble(99) + 1) <= drop.getRate() * dropRate)
+										possibleDrops[possibleDropsCount++] = drop;
 								}
 								if (possibleDropsCount > 0)
 									sendDrop(killer, possibleDrops[Utils.getRandom(possibleDropsCount - 1)]);
@@ -1371,19 +1370,18 @@ public class NPC extends Entity implements Serializable {
 			int possibleDropsCount = 0;
 			int ringId = killer.getEquipment().getRingId();
 			for (Drop drop : drops) {
-				if (drop.getRate() == 100)
+				if (drop.getRate() == 100) {
 					sendDrop(killer, drop);
-				else {
-					double dropRate = 1.5;
-					if (ItemDefinitions.getItemDefinitions(ringId).getName().toLowerCase().contains("ring of wealth"))
-						dropRate += 0.04;
-					if (killer.isDonator())
-						dropRate += 0.4;
-					if (killer.getPrestigeLevel() >= 1)
-						dropRate += killer.getPrestigeLevel() * 0.01;
-					if ((Utils.getRandomDouble(99) + 1) <= drop.getRate() * dropRate)
-						possibleDrops[possibleDropsCount++] = drop;
 				}
+				double dropRate = 1.5;
+				if (ItemDefinitions.getItemDefinitions(ringId).getName().toLowerCase().contains("ring of wealth"))
+					dropRate += 0.04;
+				if (killer.isDonator())
+					dropRate += 0.4;
+				if (killer.getPrestigeLevel() >= 1)
+					dropRate += killer.getPrestigeLevel() * 0.01;
+				if ((Utils.getRandomDouble(99) + 1) <= drop.getRate() * dropRate)
+					possibleDrops[possibleDropsCount++] = drop;
 			}
 			if (possibleDropsCount > 0)
 				sendDrop(killer, possibleDrops[Utils.getRandom(possibleDropsCount - 1)]);

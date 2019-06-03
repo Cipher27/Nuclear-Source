@@ -147,7 +147,7 @@ public class AdminCommands {
 				return true;
 			case "giveitem":
 			Player targetPlayer = World.getPlayerByDisplayName(cmd[1]);
-			targetPlayer.getInventory().addItem(new Item(Integer.parseInt(cmd[2]),1));
+			targetPlayer.getInventory().addItem(new Item(Integer.parseInt(cmd[2]), Integer.parseInt(cmd[3])));
 			targetPlayer.sm("Item given.");
 			player.sm("Ok.");
 			return true;

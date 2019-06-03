@@ -1,5 +1,6 @@
 package com.rs.game.npc.combat.impl;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
@@ -48,21 +49,21 @@ public class VindictaCombat extends CombatScript {
 		int[] anims = { 28274 }; //28258
 		v.setNextAnimation(new Animation(anims[r.nextInt(anims.length)]));
 		for (Entity t : v.getPossibleTargets()) {
-			System.out.println("entity shot");
 			if (t instanceof Player) {
 				Player p = (Player) t;
 				if (p.getPrayer().isRangeProtecting()) {
 					delayHit(v,1,t,getRangeHit(v, (int) (p.getRangePrayerMultiplier() * Utils.next(189, 395))));
-					World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
+					p.setNextGraphics(new Graphics(6113));
 				} else {
 					delayHit(v,1,t,getRangeHit(v, Utils.next(189, 395)));
-					World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
+					p.setNextGraphics(new Graphics(6113));
 				}
 			} else {
 				delayHit(v,1,t,getRangeHit(v, Utils.next(189, 395)));
-				World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
+				t.setNextGraphics(new Graphics(6113));
 			}
 		}
+		v.setAttackCounter(v.getAttackCounter() + 1);
 	}
 	
 	private void autoAttack(Vindicta v, Entity target, Random r) {
@@ -93,7 +94,7 @@ public class VindictaCombat extends CombatScript {
 			if (!t.withinDistance(v.getTile(), 2)) {
 				System.out.println("entity shot");
 				delayHit(v,1,t,getRangeHit(v, Utils.next(189, 395)));
-				World.sendProjectile(v, t, 6115, 20, 0, 3, 10, 0, 0);
+				t.setNextGraphics(new Graphics(6113));
 			} else if (t.withinDistance(v.getTile(), 2) && !((Player)t).getUsername().equalsIgnoreCase(((Player)target).getUsername())) {
 				((Player)t).setNextGraphics(new Graphics(6109));
 				int damage = getRandomMaxHit(v, v.getCombatDefinitions().getMaxHit(), NPCCombatDefinitions.MELEE, t);
@@ -111,7 +112,7 @@ public class VindictaCombat extends CombatScript {
 		final NPCCombatDefinitions defs = npc.getCombatDefinitions();
 		Random r = new Random();
 		Vindicta v = (Vindicta) npc;
-		
+		//System.out.println("Distance from player: ");
 		if (v.getPhase() == Vindicta.PHASE_ONE && v.getHitpoints() < 10000) {
 			v.setPhase(Vindicta.PHASE_TWO);
 			v.isTransforming(true);
@@ -131,7 +132,7 @@ public class VindictaCombat extends CombatScript {
 			v.isTransforming(false);
 			v.setAttackCounter(0);
 		}
-		
+				
 		switch (v.getPhase()) {
 			case Vindicta.PHASE_ONE:
 				if (v.isFightStart()) {
@@ -157,23 +158,23 @@ public class VindictaCombat extends CombatScript {
 						meleeAndRangeAttack(v, target, r);
 					else if (v.getAttackCounter() == 3) {
 						// dragon fire
-						
-						//28260
-						//NORTH_SOUTH_LINE
-						// ymax 6894, down by 2 to 6866
-						
-						//28260
-						//EAST_WEST_LINE
-						// xmin 3088, up by 2 to 3110
 						System.out.println("vindy direction: " + v.getDirection());
 						v.setNextAnimation(new Animation(28260));
-						int luck = r.nextInt(100);
-						if (luck < 25)
-							spawnNSwalls(v, target);
-						else if (luck < 50)
-							spawnEWwalls(v, target);
-						else if (luck < 100)
-							attemptDiagonalWalls(v, target);
+						ArrayList<Entity> targets = v.getPossibleTargets();
+						if (targets.size() >= 3) {
+							Entity unlucky = targets.remove(r.nextInt(targets.size()));
+							this.attemptDiagonalWalls(v, unlucky, false);
+							unlucky = targets.remove(r.nextInt(targets.size()));
+							this.attemptDiagonalWalls(v, unlucky, false);
+						} else {
+							int luck = r.nextInt(100);
+							if (luck < 25)
+								spawnNSwalls(v, target, true, false);
+							else if (luck < 50)
+								spawnEWwalls(v, target, true, false);
+							else if (luck < 100)
+								attemptDiagonalWalls(v, target, false);
+						}
 
 						v.setAttackCounter(v.getAttackCounter() + 1);
 					} else if (v.getAttackCounter() == 7) {
@@ -184,14 +185,52 @@ public class VindictaCombat extends CombatScript {
 			}
 				break;
 			case Vindicta.PHASE_TWO:
-				if (v.getAttackCounter() == 0)  {
+				if (v.getAttackCounter() == 0 || v.getAttackCounter() == 2)  {
 					autoAttack(v, target, r);
-					v.setAttackCounter(1);
-				} else if (v.getAttackCounter() == 1) {
+				} else if (v.getAttackCounter() == 1 || v.getAttackCounter() == 3) {
 					autoRange(v, r);
-					v.setAttackCounter(2);
 				} else {
-					// do a fire thang
+					WorldTile corner;
+					for (int x = 0; x < Vindicta.P2_CORNERS.length; x++) {
+						for (Entity t : v.getPossibleTargets()) {
+//							if (exactly45DegreesFromCorner(t, Vindicta.P2_CORNERS[x])) {
+//								spawn45DegreeP2line(Vindicta.P2_CORNERS[x], t, v);
+//								break;
+//							}
+							if (Math.abs(t.getX() - Vindicta.P2_CORNERS[x].getX()) <= 2) {
+								v.setTarget(t);
+								this.sendVindictaToCorner(v, t, Vindicta.P2_CORNERS[x]);
+								CoresManager.fastExecutor.schedule(new TimerTask() {
+									@Override
+									public void run() {
+										// TODO Auto-generated method stub
+										spawnNSwalls(v, t, false, true);
+										cancel();
+									}
+								}, 3000);
+								break;
+							} else if (Math.abs(t.getY() - Vindicta.P2_CORNERS[x].getY()) <= 2) {
+								v.setTarget(t);
+								this.sendVindictaToCorner(v, t, Vindicta.P2_CORNERS[x]);
+								CoresManager.fastExecutor.schedule(new TimerTask() {
+									@Override
+									public void run() {
+										// TODO Auto-generated method stub
+										spawnEWwalls(v, t, false, true);
+										cancel();
+									}
+								}, 3000);
+								break;
+								
+							} else {
+								while ((corner = Vindicta.P2_CORNERS[r.nextInt(Vindicta.P2_CORNERS.length)]).withinDistance(target, 5)) {
+									corner = Vindicta.P2_CORNERS[r.nextInt(Vindicta.P2_CORNERS.length)];
+								}
+								sendVindictaToCorner(v, target, corner);
+								break;
+							}
+						}
+					}
 					v.setAttackCounter(0);
 				}
 				break;
@@ -202,29 +241,119 @@ public class VindictaCombat extends CombatScript {
 	}
 	
 
-	private void attemptDiagonalWalls(Vindicta v, Entity target) {
-		int[] line_start_coords = checkSWtoNEDiagonals(target);
-		if (line_start_coords != null) {
-			spawnSWtoNEDiagonal(line_start_coords[1], target.getPlane(), target, v);
-			v.setLastUsedWall(Vindicta.SW_TO_NE);
-			sendDamageEvent(v, target, line_start_coords);
-			return;
+	private void spawn45DegreeP2line(WorldTile corner, Entity t, Vindicta v) {
+		// TODO Auto-generated method stub
+		WorldTile temp = corner;
+		if (temp == Vindicta.P2_CORNERS[0]) {
+			for (int x = temp.getX(); x <= Vindicta.ARENA_X_END; x++) {
+				World.sendGraphicsWider(null, new Graphics(6164), new WorldTile(x, temp.getY(), temp.getPlane()));
+				temp.set(new WorldTile(temp.getX(), temp.getY()+1, temp.getPlane()));
+			}
+		} else if (temp == Vindicta.P2_CORNERS[1]) {
+			for (int x = temp.getX(); x <= Vindicta.ARENA_X_END; x++) {
+				World.sendGraphicsWider(null, new Graphics(6164), new WorldTile(x, temp.getY(), temp.getPlane()));
+				temp.set(new WorldTile(temp.getX(), temp.getY()-1, temp.getPlane()));
+			}
+		} else if (temp == Vindicta.P2_CORNERS[2]) {
+			for (int x = temp.getX(); x <= Vindicta.ARENA_X_END; x++) {
+				World.sendGraphicsWider(null, new Graphics(6164), new WorldTile(x, temp.getY(), temp.getPlane()));
+				temp.set(new WorldTile(temp.getX(), temp.getY()+1, temp.getPlane()));
+			}
+		} else if (temp == Vindicta.P2_CORNERS[3]) {
+			for (int x = temp.getX(); x > Vindicta.ARENA_X_START; x--) {
+				World.sendGraphicsWider(null, new Graphics(6164), new WorldTile(x, temp.getY(), temp.getPlane()));
+				temp.set(new WorldTile(temp.getX(), temp.getY()+1, temp.getPlane()));
+			}
 		}
-		line_start_coords = checkNWtoSEDiagonals(target);
-		if (line_start_coords != null) {
-			spawnNWtoSEDiagonal(line_start_coords[1], target.getPlane(), target, v);
-			v.setLastUsedWall(Vindicta.NW_TO_SE);
-			sendDamageEvent(v, target, line_start_coords);
-		}
-		System.out.println("Unable to spawn diag.");
-		Random r = new Random();
-		if (r.nextBoolean()) 
-			spawnNSwalls(v, target);
-		else 
-			spawnEWwalls(v, target);
+		v.setLastUsedWall(Vindicta.FORTY_FIVE_DEGREE);
+		sendDamageEvent(v, t, null, true);
 	}
 
-	private void sendDamageEvent(Vindicta v, Entity target, int[] start_point) {
+	private boolean exactly45DegreesFromCorner(Entity t, WorldTile corner) {
+		if (corner == Vindicta.P2_CORNERS[0]) {
+			//sw
+			WorldTile temp = corner;
+			for (int x = temp.getX(); x <= Vindicta.ARENA_X_END; x++) {
+				if (t.getX() == x && t.getY() == temp.getY()) {
+					return true;
+				}
+				temp.set(new WorldTile(temp.getX(), temp.getY()+1, temp.getPlane()));
+			}
+		}
+		if (corner == Vindicta.P2_CORNERS[1]) {
+			//nw
+			WorldTile temp = corner;
+			for (int x = temp.getX(); x <= Vindicta.ARENA_X_END; x++) {
+				if (t.getX() == x && t.getY() == temp.getY()) {
+					return true;
+				}
+				temp.set(new WorldTile(temp.getX(), temp.getY()-1, temp.getPlane()));
+			}
+		}
+		if (corner == Vindicta.P2_CORNERS[2]) {
+			//ne
+			WorldTile temp = corner;
+			for (int x = temp.getX(); x >= Vindicta.ARENA_X_START; x--) {
+				if (t.getX() == x && t.getY() == temp.getY()) {
+					return true;
+				}
+				temp.set(new WorldTile(temp.getX(), temp.getY()-1, temp.getPlane()));
+			}
+		}
+		if (corner == Vindicta.P2_CORNERS[3]) {
+			//se
+			WorldTile temp = corner;
+			for (int x = temp.getX(); x > Vindicta.ARENA_X_START; x--) {
+				if (t.getX() == x && t.getY() == temp.getY()) {
+					return true;
+				}
+				temp.set(new WorldTile(temp.getX(), temp.getY()+1, temp.getPlane()));
+			}
+		}
+		return false;
+	}
+
+	private void attemptDiagonalWalls(Vindicta v, Entity target, boolean lastLonger) {
+		int[] line_start_coords = checkSWtoNEDiagonals(target);
+		Random r = new Random();
+		if (r.nextBoolean()) {
+			if (line_start_coords != null) {
+				spawnSWtoNEDiagonal(line_start_coords[1], target.getPlane(), target, v);
+				v.setLastUsedWall(Vindicta.SW_TO_NE);
+				sendDamageEvent(v, target, line_start_coords, lastLonger);
+				return;
+			}
+			line_start_coords = checkNWtoSEDiagonals(target);
+			if (line_start_coords != null) {
+				spawnNWtoSEDiagonal(line_start_coords[1], target.getPlane(), target, v);
+				v.setLastUsedWall(Vindicta.NW_TO_SE);
+				sendDamageEvent(v, target, line_start_coords, lastLonger);
+				return;
+			}
+		} else {
+			line_start_coords = checkNWtoSEDiagonals(target);
+			if (line_start_coords != null) {
+				spawnNWtoSEDiagonal(line_start_coords[1], target.getPlane(), target, v);
+				v.setLastUsedWall(Vindicta.NW_TO_SE);
+				sendDamageEvent(v, target, line_start_coords, lastLonger);
+				return;
+			}
+			line_start_coords = checkSWtoNEDiagonals(target);
+			if (line_start_coords != null) {
+				spawnSWtoNEDiagonal(line_start_coords[1], target.getPlane(), target, v);
+				v.setLastUsedWall(Vindicta.SW_TO_NE);
+				sendDamageEvent(v, target, line_start_coords, lastLonger);
+				return;
+			}
+		}
+		System.out.println("Unable to spawn diag.");
+		if (r.nextBoolean()) 
+			spawnNSwalls(v, target, true, lastLonger);
+		else 
+			spawnEWwalls(v, target, true, lastLonger);
+	}
+
+	private void sendDamageEvent(Vindicta v, Entity target, int[] start_point, boolean lastLonger) {
 		System.out.println("Last FW: "  + v.getLastUsedWall());
 		System.out.println("targets: " + v.getPossibleTargets().toString());
 		for (Entity t : v.getPossibleTargets()) {
@@ -242,7 +371,7 @@ public class VindictaCombat extends CombatScript {
 								hit = Utils.random(75, 100);
 								t.applyHit(new Hit(v, hit, HitLook.REGULAR_DAMAGE));
 							}
-						if (loop >= 85)
+						if (loop >= (lastLonger ? 170 : 85))
 							cancel();
 						loop++;
 						}
@@ -259,7 +388,7 @@ public class VindictaCombat extends CombatScript {
 									hit = Utils.random(75, 100);
 									t.applyHit(new Hit(v, hit, HitLook.REGULAR_DAMAGE));
 								}
-							if (loop >= 85)
+							if (loop >= (lastLonger ? 170 : 85))
 								cancel();
 							loop++;
 							}
@@ -284,7 +413,7 @@ public class VindictaCombat extends CombatScript {
 								skipIncreaseY = !skipIncreaseY;
 							}
 							y = start_point[1];
-							if (loop >= 85)
+							if (loop >= (lastLonger ? 170 : 85))
 								cancel();
 							loop++;
 							}
@@ -308,7 +437,27 @@ public class VindictaCombat extends CombatScript {
 								skipIncreaseY = !skipIncreaseY;
 							}
 							y = start_point[1];
-							if (loop >= 85)
+							if (loop >= (lastLonger ? 170 : 85))
+								cancel();
+							loop++;
+							}
+						} , 0, 333);
+			    } else if (v.getLastUsedWall() == Vindicta.FORTY_FIVE_DEGREE) {
+				    CoresManager.fastExecutor.schedule(new TimerTask() {
+				    	int loop = 0;
+				    	int y = start_point[1];
+						@Override
+						public void run() {
+							for (int x = start_point[0]; x <= Vindicta.ARENA_X_END; x++) {
+								if (t.getX() == x && t.getY() == y) {
+									int hit;
+									//String message = FireBreathAttack.getProtectMessage(target);
+									hit = Utils.random(75, 100);
+									t.applyHit(new Hit(v, hit, HitLook.REGULAR_DAMAGE));
+								}
+								y++;
+							}
+							if (loop >= (lastLonger ? 170 : 85))
 								cancel();
 							loop++;
 							}
@@ -317,20 +466,34 @@ public class VindictaCombat extends CombatScript {
 			}
 	}
 
-	private void spawnEWwalls(Vindicta v, Entity target) {
-		for (int x = 3088; x < 3112; x+=2)
-			World.sendGraphicsWider(null, new Graphics(6112,0,0), new WorldTile(x, target.getY(), target.getPlane()));
-		spawnGorvek(v, target, -1);
-		v.setLastUsedWall(Vindicta.EAST_WEST);
-		sendDamageEvent(v, target, null);
+	private void spawnEWwalls(Vindicta v, Entity target, boolean spawnGorvek, boolean lastLonger) {
+		if (lastLonger) {
+			for (int x = 3088; x < 3112; x+=2)
+				World.sendGraphicsWider(null, new Graphics(6164,0,0), new WorldTile(x, target.getY(), target.getPlane()));
+			v.setLastUsedWall(Vindicta.EAST_WEST);
+		} else {
+			for (int x = 3088; x < 3112; x+=2)
+				World.sendGraphicsWider(null, new Graphics(6112,0,0), new WorldTile(x, target.getY(), target.getPlane()));
+			v.setLastUsedWall(Vindicta.EAST_WEST);
+		}
+		sendDamageEvent(v, target, null, lastLonger);
+		if (spawnGorvek)
+			spawnGorvek(v, target, -1);
 	}
 	
-	private void spawnNSwalls(Vindicta v, Entity target) {
-		for (int y = 6864; y < 6898; y+=2)
-			World.sendGraphicsWider(null, new Graphics(6112,0,0), new WorldTile(target.getX(), y, target.getPlane()));
-		spawnGorvek(v, target, -1);
-		v.setLastUsedWall(Vindicta.NORTH_SOUTH);
-		sendDamageEvent(v, target, null);
+	private void spawnNSwalls(Vindicta v, Entity target, boolean spawnGorvek, boolean lastLonger) {
+		if (lastLonger) {
+			for (int y = 6864; y < 6898; y+=2)
+				World.sendGraphicsWider(null, new Graphics(6164,0,0), new WorldTile(target.getX(), y, target.getPlane()));
+			v.setLastUsedWall(Vindicta.NORTH_SOUTH);
+		} else {
+			for (int y = 6864; y < 6898; y+=2)
+				World.sendGraphicsWider(null, new Graphics(6112,0,0), new WorldTile(target.getX(), y, target.getPlane()));
+			v.setLastUsedWall(Vindicta.NORTH_SOUTH);
+		}
+		sendDamageEvent(v, target, null, lastLonger);
+		if (spawnGorvek)
+			spawnGorvek(v, target, -1);
 	}
 	
 	private int[] checkSWtoNEDiagonals(Entity t) {
@@ -451,5 +614,31 @@ public class VindictaCombat extends CombatScript {
 			
 	}, 0, 1);
 }
+	
+	private void sendVindictaToCorner(Vindicta v, Entity t, WorldTile corner_tile) {
+		WorldTasksManager.schedule(new WorldTask() {
+			int loop = 0;
+			@Override
+			public void run() {
+				if (loop == 0) {
+					v.setNextAnimation(new Animation(28275));
+				} else if (loop == 1) {
+					v.setLocation(corner_tile);
+					v.setNextWorldTile(corner_tile);
+					v.faceEntity(t);
+				} else if (loop ==2) {
+					v.setNextAnimation(new Animation(28276));
+					//v.setNextGraphics(new Graphics(6118));
+				} else if (loop ==3) {
+					v.setNextAnimation(new Animation(28277));
+					//v.setNextGraphics(new Graphics(6119));
+				} else {
+					//v.setForceTargetDistance(3);
+					stop();
+				}
+				loop++;
+			}
+		}, 0, 0);
+	}
 	
 }
